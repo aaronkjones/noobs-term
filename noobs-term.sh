@@ -243,9 +243,9 @@ echo ''
 echo ''
 echo '      * Press Ctrl + a, then I to load Tmux plugins'
 echo ''
-if [ "$distro" = 'Ubuntu' ]; then
+if [ "$platform" = 'Linux' ]; then
 echo '      * In Gnome Terminal preferences, set Nord as your default profile'
-elif [ "$distro" = 'Mac' ]; then
+elif [ "$platform" = 'Mac' ]; then
 echo '      * In iTerm, set your color profile to Nord'
 fi
 echo ''
