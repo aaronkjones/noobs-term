@@ -1,12 +1,13 @@
 # NOOBS TERMINAL
 
 ## Overview
-Noobs Terminal is a single-command installer that incorporates some of the wonderful programs, packages, and configurations that are commonly installed together. Special thanks to all of the contributors and creators of the tools and configurations included.
+Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.  
+
+Special thanks to all of the contributors and creators of the tools and configurations included.
 
 ![](docs/_media/preview.png)
 
-What's included
----------------
+## What's included
 | Feature | Description |
 | --- | --- |
 | [zsh](https://en.wikipedia.org/wiki/Z_shell) | a popular shell with features like completion, path correction, spelling correction, and more |
@@ -19,6 +20,15 @@ What's included
 | [nord-vim](https://github.com/arcticicestudio/nord-vim) | An arctic, north-bluish clean and elegant Vim color theme 
 | [imp](https://github.com/aaronkjones/Imp) | My modified Imp theme by [igormp](https://github.com/igormp/Imp) | 
 
+## Features
+* Auto Completion
+* Auto Suggestion
+* Command Validation
+* Spell Correction
+* Themes
+* Directory History
+* Git 
+* Aliases
 
 ![](docs/_media/zsh-autocompletion-suggestion.gif)
 

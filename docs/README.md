@@ -21,6 +21,15 @@ What's included
 | [nord-vim](https://github.com/arcticicestudio/nord-vim) | An arctic, north-bluish clean and elegant Vim color theme 
 | [imp](https://github.com/aaronkjones/Imp) | My modified Imp theme by [igormp](https://github.com/igormp/Imp) | 
 
+## Features
+* Auto Completion
+* Auto Suggestion
+* Command Validation
+* Spell Correction
+* Themes
+* Directory History
+* Git 
+* Aliases
 
 ![](docs/_media/zsh-autocompletion-suggestion.gif)
 
