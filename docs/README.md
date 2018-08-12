@@ -22,14 +22,17 @@ What's included
 | [imp](https://github.com/aaronkjones/Imp) | My modified Imp theme by [igormp](https://github.com/igormp/Imp) | 
 
 ## Features
-* Auto Completion
-* Auto Suggestion
-* Command Validation
-* Spell Correction
+* Auto completion
+* Auto suggestion
+* Command validation
+* Spell correction
 * Themes
-* Directory History
-* Git 
+* Directory history
+* Git feedback
 * Aliases
+* Terminal multiplexing
+* Persistance
+* Split windows
 
 ![](docs/_media/zsh-autocompletion-suggestion.gif)
 
