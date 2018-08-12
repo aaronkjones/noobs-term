@@ -41,8 +41,6 @@ Currently the following platforms are confirmed to be supported
 * macOS
 * Arch Linux
 
-> Note: Arch and Redhat support coming soon
-
 ## Install
 To install, run this command in your terminal:  
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh)"`
