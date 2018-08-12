@@ -101,44 +101,44 @@ if [ -d "$dotfiles_dir" ]; then
     echo
 fi
 # find current platform and distribution
-if [ "$(uname)" == 'Linux' ]; then
+if [ "$(uname)" = 'Linux' ]; then
 platform='Linux'
     # if [ -f "/etc/arch-release" ]; then
     #   distro='Arch'
-    if [ "$(lsb_release -ds 2>/dev/null | awk '{print $1}')" == "Ubuntu" ]; then
+    if [ "$(lsb_release -ds 2>/dev/null | awk '{print $1}')" = "Ubuntu" ]; then
     distro='Ubuntu'
     fi
-elif [ "$(uname)" == 'Darwin' ]; then
+elif [ "$(uname)" = 'Darwin' ]; then
 platform='Mac'
 fi
 echo "Current platform: $platform"
-if [ "$platform" == 'Linux' ]; then
+if [ "$platform" = 'Linux' ]; then
     echo "Current distribution: $distro"
 fi
 echo
 # add neovim repo
-if [ "$distro" == 'Ubuntu' ]; then
+if [ "$distro" = 'Ubuntu' ]; then
     echo "Adding Neovim Repository..."
-    /usr/bin/sudo apt-add-repository ppa:neovim-ppa/stable -y > /dev/null
+    /usr/bin/sudo apt-add-repository ppa:neovim-ppa/stable -y> /dev/null
     echo "Done"
 fi
 echo
 # install dependencies
 # linux
 echo "Installing dependencies..."
-if [ "$platform" == 'Linux' ]; then
-    if [ "$distro" == 'Ubuntu' ]; then
+if [ "$platform" = 'Linux' ]; then
+    if [ "$distro" = 'Ubuntu' ]; then
         /usr/bin/sudo apt-get -qq update
         for p in $dependencies; do
             /usr/bin/sudo apt-get -qq install -y "$p"
         done
-    elif [ "$distro" == 'Arch' ]; then
+    elif [ "$distro" = 'Arch' ]; then
         for p in $dependencies; do
             /usr/bin/pacman -S --noconfirm "$p"
         done
 fi
 # mac
-elif [ $platform == 'Mac' ]; then
+elif [ $platform = 'Mac' ]; then
     if ! type "$(which brew)"; then
         echo "Brew not installed. Installing..."
         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -196,14 +196,14 @@ curl -so "$HOME/.oh-my-zsh/themes/imp.zsh-theme" https://raw.githubusercontent.c
 echo "Done"
 echo
 # install nord theme for gnome terminal
-    if [ "$platform" == 'Linux' ]; then
+    if [ "$platform" = 'Linux' ]; then
         # check if running desktop or headless
-        if xhost >& /dev/null; then
+        if xhost > /dev/null 2>&1; then
         echo "Installing Nord theme for Gnome Terminal..."
         curl -sO https://raw.githubusercontent.com/arcticicestudio/nord-gnome-terminal/develop/src/nord.sh && chmod +x nord.sh && ./nord.sh
         rm -f nord.sh
         fi
-    elif [ "$platform" == 'Mac' ]; then
+    elif [ "$platform" = 'Mac' ]; then
         echo "Downloading Nord theme for iTerm"
         temp_dir=$(mktemp -d 2>/dev/null || mktemp -d -t 'mytmpdir')
         wget -q -O "$temp_dir/Nord.itermcolors" https://raw.githubusercontent.com/arcticicestudio/nord-iterm2/master/src/xml/Nord.itermcolors
@@ -221,7 +221,7 @@ quiet_git clone https://github.com/powerline/fonts.git --depth=1 && \
 printf "${PURP}"
 echo "Done"
 echo
-if [ "$platform" == 'Mac' ]; then
+if [ "$platform" = 'Mac' ]; then
 echo 'Installing Nord theme for iTerm...'
     open "$temp_dir/Nord.itermcolors"
 fi
@@ -237,19 +237,19 @@ echo '/_/_/ /_/____/\__/\__,_/_/_/\__,_/\__/_/\____/_/ /_/   \___/\____/_/ /_/ /
 echo '                                                                          /_/                      '
 echo '***************************************************************************************************'
 echo ''
+echo "      * Note: You will have to log out and back in for Zsh to be set as the default shell."
+echo "              If you don't want to log out now, enter 'zsh'"
+echo ''
+echo ''
 echo '      * Press Ctrl + a, then I to load Tmux plugins'
 echo ''
-if [ "$distro" == 'Ubuntu' ]; then
+if [ "$distro" = 'Ubuntu' ]; then
 echo '      * In Gnome Terminal preferences, set Nord as your default profile'
-elif [ "$distro" == 'Mac' ]; then
+elif [ "$distro" = 'Mac' ]; then
 echo '      * In iTerm, set your color profile to Nord'
 fi
 echo ''
 echo '      * Set an appropriate font (e.g. Inconsolata for Powerline)'
-echo ''
-echo ''
-echo "      * Note: You will have to log out and back in for Zsh to be set as the default shell."
-echo "              If you don't want to log out now, enter 'zsh'"
 echo ''
 echo ''
 
