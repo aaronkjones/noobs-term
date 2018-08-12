@@ -7,7 +7,7 @@ Special thanks to all of the contributors and creators of the tools and configur
 
 ![](docs/_media/preview.png)
 
-## What's included
+## What's Included
 | Feature | Description |
 | --- | --- |
 | [zsh](https://en.wikipedia.org/wiki/Z_shell) | a popular shell with features like completion, path correction, spelling correction, and more |
@@ -35,7 +35,14 @@ Special thanks to all of the contributors and creators of the tools and configur
 
 ![](https://thumbs.gfycat.com/DependentChubbyHylaeosaurus-size_restricted.gif)
 
-## Installation
+## Supported Platforms
+Currently the following platforms are confirmed to be supported
+* Ubuntu
+* OSX
+
+> Note: Arch and Redhat support coming soon
+
+## Install
 To install, run this command in your terminal:  
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh)"`
 
