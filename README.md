@@ -30,7 +30,7 @@ Special thanks to all of the contributors and creators of the tools and configur
 * Git 
 * Aliases
 
-![](docs/_media/zsh-autocompletion-suggestion.gif)
+![](https://thumbs.gfycat.com/DependentChubbyHylaeosaurus-size_restricted.gif)
 
 ## Installation
 To install, run this command in your terminal:  
