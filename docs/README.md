@@ -1,7 +1,9 @@
 # NOOBS TERMINAL
 
 ## Overview
-Noobs Terminal is a single-command installer that incorporates some of the wonderful programs, packages, and configurations that are commonly installed together. Special thanks to all of the contributors and creators of the tools and configurations included.
+Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.   
+
+Special thanks to all of the contributors and creators of the tools and configurations included.
 
 ![](docs/_media/preview.png)
 
@@ -22,7 +24,7 @@ What's included
 
 ![](docs/_media/zsh-autocompletion-suggestion.gif)
 
-## Installation
+## Install
 To install, run this command in your terminal:  
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh)"`
 
