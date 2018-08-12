@@ -103,10 +103,10 @@ fi
 # find current platform and distribution
 if [ "$(uname)" = 'Linux' ]; then
 platform='Linux'
-    # if [ -f "/etc/arch-release" ]; then
-    #   distro='Arch'
-    if [ "$(lsb_release -ds 2>/dev/null | awk '{print $1}')" = "Ubuntu" ]; then
-    distro='Ubuntu'
+    if type lsb_release >/dev/null 2>&1; then
+    distro="$(lsb_release -si)"
+    elif [ -f "/etc/arch-release" ]; then
+      distro='Arch'
     fi
 elif [ "$(uname)" = 'Darwin' ]; then
 platform='Mac'
@@ -119,7 +119,7 @@ echo
 # add neovim repo
 if [ "$distro" = 'Ubuntu' ]; then
     echo "Adding Neovim Repository..."
-    /usr/bin/sudo apt-add-repository ppa:neovim-ppa/stable -y> /dev/null
+    /usr/bin/sudo apt-add-repository ppa:neovim-ppa/stable -y 1> /dev/null
     echo "Done"
 fi
 echo
@@ -134,7 +134,7 @@ if [ "$platform" = 'Linux' ]; then
         done
     elif [ "$distro" = 'Arch' ]; then
         for p in $dependencies; do
-            /usr/bin/pacman -S --noconfirm "$p"
+            /usr/bin/sudo pacman -q -S --noconfirm "$p" 1>/dev/null
         done
 fi
 # mac
@@ -157,7 +157,7 @@ echo
 # oh my zsh
 echo "Installing Oh My Zsh..."
 printf "${NORMAL}"
-wget  -O - https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+wget -q -O - https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh 1>/dev/null
 rm -f "$HOME/.zshrc" # remove oh-my-zsh supplied .zshrc
 printf "${PURP}"
 echo "Done"
