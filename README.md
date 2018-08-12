@@ -38,7 +38,8 @@ Special thanks to all of the contributors and creators of the tools and configur
 ## Supported Platforms
 Currently the following platforms are confirmed to be supported
 * Ubuntu
-* OSX
+* macOS
+* Arch Linux
 
 > Note: Arch and Redhat support coming soon
 
