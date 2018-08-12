@@ -66,4 +66,4 @@ After installing, follow these steps.
 > Note: You will have to log out and back in for Zsh to be set as the default shell. If you don't want to log out, enter *zsh*.
 
 ## Contributing
-Please read [CONTRIBUTING.md](../CONTRIBUTING.md). 
+Please read [CONTRIBUTING.md](https://github.com/aaronkjones/noobs-term/blob/master/CONTRIBUTING.md). 
