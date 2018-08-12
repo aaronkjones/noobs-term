@@ -35,18 +35,21 @@ Special thanks to all of the contributors and creators of the tools and configur
 
 ![](https://thumbs.gfycat.com/DependentChubbyHylaeosaurus-size_restricted.gif)
 
+
+## Install
+To install, run this command in your terminal:  
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh)"`
+
 ## Supported Platforms
 Currently the following platforms are confirmed to be supported
 * Ubuntu
 * macOS
 * Arch Linux
 
-## Install
-To install, run this command in your terminal:  
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh)"`
-
 ## Setup
 ### Ubuntu
+
+> Note: You will have to log out and back in for Zsh to be set as the default shell. If you don't want to log out, enter *zsh*.
 
 After installing, follow these steps.
 
@@ -54,15 +57,19 @@ After installing, follow these steps.
 * In Gnome Terminal preferences, set Nord as your default profile
 * Set an appropriate font (e.g. Inconsolata for Powerline)
 
-> Note: You will have to log out and back in for Zsh to be set as the default shell. If you don't want to log out, enter *zsh*.
-
 ### OSX
 
 * Press *Ctrl* + *a*, then *I* to load Tmux plugins
 * In iTerm, set your color profile to Nord
 * Set an appropriate font (e.g. Inconsolata for Powerline)
 
-> Note: You will have to log out and back in for Zsh to be set as the default shell. If you don't want to log out, enter *zsh*.
+### Arch Linux
+
+After installing, follow these steps.
+
+* Press *Ctrl* + *a*, then *I* to load Tmux plugins
+* In Gnome Terminal preferences, set Nord as your default profile
+* Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ## Contributing
 Please read [CONTRIBUTING.md](CONTRIBUTING.md).
