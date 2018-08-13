@@ -38,7 +38,7 @@ Special thanks to all of the contributors and creators of the tools and configur
 
 ## Install
 To install, run this command in your terminal:  
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh)"`
+`sh -c "$(wget https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"`
 
 ## Supported Platforms
 Currently the following platforms are confirmed to be supported
