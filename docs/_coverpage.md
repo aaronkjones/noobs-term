@@ -2,7 +2,7 @@
 
 # NOOBS TERM
 
-> Single-command installer for terminal programs, packages, and configurations that are commonly installed together
+> A terminal for noobs.
 
 [Overview](#Overview)
 [Install](#Install)
