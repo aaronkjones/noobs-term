@@ -1,4 +1,5 @@
 # NOOBS TERMINAL
+A terminal configuration for noobs.
 
 ## Overview
 Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.  
@@ -39,6 +40,7 @@ Special thanks to all of the contributors and creators of the tools and configur
 ## Install
 To install, run this command in your terminal:  
 `sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"`
+
 
 ## Supported Platforms
 Currently the following platforms are confirmed to be supported
