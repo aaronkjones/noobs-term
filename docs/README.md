@@ -1,3 +1,5 @@
+A terminal configuration for noobs.
+
 ## Overview
 ![](_media/cover_preview_lrg.png)  
 Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.   
