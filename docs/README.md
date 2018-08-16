@@ -1,7 +1,9 @@
 ## Overview
+![](_media/cover_preview_lrg.png)  
 Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.   
 
-Special thanks to all of the contributors and creators of the tools and configurations included.
+**Special thanks to all of the contributors and creators of the tools and configurations included.**
+
 
 ## What's Included
 | Feature | Description |
@@ -29,7 +31,7 @@ Special thanks to all of the contributors and creators of the tools and configur
 * Persistance
 * Split windows
 
-![](https://thumbs.gfycat.com/DependentChubbyHylaeosaurus-size_restricted.gif)
+![](_media/zsh-autocompletion-suggestion.gif)
 
 
 ## Install
