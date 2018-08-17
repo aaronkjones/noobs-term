@@ -19,8 +19,8 @@ Noobs Terminal is a single-command installer that incorporates some of the wonde
 | [imp](https://github.com/aaronkjones/Imp) | My modified Imp theme by [igormp](https://github.com/igormp/Imp) | 
 
 ## Features
-* Auto completion
-* Auto suggestion
+* Auto-completion
+* Auto-suggestion
 * Command validation
 * Spell correction
 * Themes
@@ -33,6 +33,11 @@ Noobs Terminal is a single-command installer that incorporates some of the wonde
 
 ![](_media/zsh-autocompletion-suggestion.gif)
 
+## Resources
+* [Awesome Tmux](https://github.com/rothgar/awesome-tmux)  
+* [Awesome Vim](https://github.com/akrawchyk/awesome-vim)  
+* [VimAwesome](https://vimawesome.com)  
+* [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)  
 
 ## Install
 To install, run this command in your terminal:  

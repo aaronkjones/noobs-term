@@ -19,8 +19,8 @@ Special thanks to all of the contributors and creators of the tools and configur
 | [imp](https://github.com/aaronkjones/Imp) | My modified Imp theme by [igormp](https://github.com/igormp/Imp) | 
 
 ## Features
-* Auto completion
-* Auto suggestion
+* Auto-completion
+* Auto-suggestion
 * Command validation
 * Spell correction
 * Themes
@@ -31,8 +31,13 @@ Special thanks to all of the contributors and creators of the tools and configur
 * Persistance
 * Split windows
 
-![](https://thumbs.gfycat.com/DependentChubbyHylaeosaurus-size_restricted.gif)
+![](docs/_media/zsh-autocompletion-suggestion.gif)
 
+## Resources
+* [Awesome Tmux](https://github.com/rothgar/awesome-tmux)  
+* [Awesome Vim](https://github.com/akrawchyk/awesome-vim)  
+* [VimAwesome](https://vimawesome.com)  
+* [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)  
 
 ## Install
 To install, run this command in your terminal:  
