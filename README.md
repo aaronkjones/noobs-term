@@ -50,8 +50,6 @@ Currently the following platforms are confirmed to be supported
 * macOS
 * Arch Linux
 
-> Note: Arch and Redhat support coming soon
-
 ## Setup
 ### Ubuntu
 
