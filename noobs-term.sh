@@ -157,7 +157,9 @@ echo
 # oh my zsh
 echo "Installing Oh My Zsh..."
 printf "${NORMAL}"
-chsh -s "$(which zsh)"
+# if [ $platform = 'Mac' ]; then
+# sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+# fi
 wget -q -O - https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | zsh
 rm -f "$HOME/.zshrc" # remove oh-my-zsh supplied .zshrc
 printf "${PURP}"
