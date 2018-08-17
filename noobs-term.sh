@@ -157,7 +157,7 @@ echo
 # oh my zsh
 echo "Installing Oh My Zsh..."
 printf "${NORMAL}"
-wget -q -O - https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+wget -q -O - https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | zsh
 rm -f "$HOME/.zshrc" # remove oh-my-zsh supplied .zshrc
 printf "${PURP}"
 echo "Done"
