@@ -41,7 +41,12 @@ Noobs Terminal is a single-command installer that incorporates some of the wonde
 
 ## Install
 To install, run this command in your terminal:  
-`sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"`
+
+`sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"`  
+
+If you do not have wget use,
+
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh)"`
 
 ## Supported Platforms
 Currently the following platforms are confirmed to be supported
