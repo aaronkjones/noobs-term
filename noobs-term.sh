@@ -118,9 +118,11 @@ fi
 echo
 # add neovim repo
 if [ "$distro" = 'Ubuntu' ]; then
-    echo "Adding Neovim Repository..."
-    /usr/bin/sudo apt-add-repository ppa:neovim-ppa/stable -y 1> /dev/null
-    echo "Done"
+    if ! command -v nvim; then
+        echo "Adding Neovim Repository..."
+        /usr/bin/sudo apt-add-repository ppa:neovim-ppa/stable -y 1> /dev/null
+        echo "Done"
+    fi
 fi
 echo
 # install dependencies
