@@ -39,6 +39,20 @@ Noobs Terminal is a single-command installer that incorporates some of the wonde
 * [VimAwesome](https://vimawesome.com)  
 * [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)  
 
+## Demo
+If you want to "try before you buy", you can use Vagrant to spin up a VM.
+
+### Install Virtualbox
+[Virtualbox Downloads](https://www.virtualbox.org/wiki/Downloads)  
+### Install Vagrant
+[Vagrant Downloads](https://www.vagrantup.com/downloads.html)
+### Initialize a Vagrantfile for Ubuntu 18.04
+`vagrant init peru/ubuntu-18.04-desktop-amd64 --box-version 20180801.01`  
+### Start Your Ubuntu VM
+`vagrant up`  
+
+In Virtualbox, click the "Show" button. You can now run the install command below in a destructible environment.
+
 ## Install
 To install, run this command in your terminal:  
 
