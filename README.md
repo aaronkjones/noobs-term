@@ -39,6 +39,17 @@ Special thanks to all of the contributors and creators of the tools and configur
 * [VimAwesome](https://vimawesome.com)  
 * [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)  
 
+## Demo
+If you want to "try before you buy", you can use Vagrant to spin up a VM.
+
+# Install Virtualbox
+[Virtualbox Downloads](https://www.virtualbox.org/wiki/Downloads)
+# Initialize a Vagrantfile for Ubuntu 18.04
+`vagrant init peru/ubuntu-18.04-desktop-amd64 --box-version 20180801.01`
+# Start Your Ubuntu VM
+`vagrant up`
+
+
 ## Install
 To install, run this command in your terminal:  
 
