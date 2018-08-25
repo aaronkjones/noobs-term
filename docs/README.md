@@ -62,11 +62,14 @@ If you do not have wget use,
 
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh)"`
 
+For Windows, see setup below.
+
 ## Supported Platforms
 Currently the following platforms are confirmed to be supported
 * Ubuntu
 * macOS
 * Arch Linux
+* Windows
 
 ## Setup
 > Note: You will have to log out and back in for Zsh to be set as the default shell. If you don't want to log out, enter *zsh*.
@@ -88,6 +91,44 @@ Currently the following platforms are confirmed to be supported
 * Press *Ctrl* + *a*, then *I* to load Tmux plugins
 * In Gnome Terminal preferences, set Nord as your default profile
 * Set an appropriate font (e.g. Inconsolata for Powerline)
+
+### Windows
+1. Enable WSL  
+In Powershell (as Admin):  
+`Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+2. Install Ubuntu 18.04  
+From the Windows Store, search for Ubuntu 18.04
+
+3. Install Chocolatey  
+In Powershell (as Admin):  
+`Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`  
+
+4. Install Hyper  
+In Powershell (as Admin):  
+`choco install -y hyper`
+
+5. Install Font  
+Download Inconsolata (or your preferred font), open, and click "Install"
+`https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf`
+> To install all Powerline fonts, clone the repo `https://github.com/powerline/fonts.git` and run install.ps1
+
+6. Set shell to wsl.exe  
+In Hyper:  
+`chsh -s $(which zsh)`  
+In preferences (Ctrl+comma), find and change shell and font settings to:
+```
+shell: 'C:\\Windows\\System32\\wsl.exe',
+shellArgs: [],
+fontFamily: 'Inconsolata for Powerline',
+```
+> If you want, you can add the font to the beginning to retain fallback fonts (e.g. fontFamily: 'Inconsolata for Powerline','monospace',...)
+
+7. Install Nord-Hyper  
+In Powershell (as Admin):  
+`hyper -i nord-hyper`
+
+8. Run Noobs-Term installer  
+`sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"` 
 
 ## Contributing
 Please read [CONTRIBUTING.md](https://github.com/aaronkjones/noobs-term/blob/master/CONTRIBUTING.md). 
