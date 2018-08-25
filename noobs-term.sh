@@ -102,9 +102,10 @@ if [ -d "$dotfiles_dir" ]; then
 fi
 # find current platform and distribution
 if [ "$(uname)" = 'Linux' ]; then
-platform='Linux'
+    platform='Linux'
     if type lsb_release >/dev/null 2>&1; then
-    distro="$(lsb_release -si)"
+      distro="$(lsb_release -si)"
+      distro_ver="$(lsb_release -r -s)"
     elif [ -f "/etc/arch-release" ]; then
       distro='Arch'
     fi
@@ -113,6 +114,7 @@ platform='Mac'
 fi
 echo "Current platform: $platform"
 if [ "$platform" = 'Linux' ]; then
+    echo "Current distribution version: $distro_ver"
     echo "Current distribution: $distro"
 fi
 echo
@@ -120,8 +122,12 @@ echo
 if [ "$distro" = 'Ubuntu' ]; then
     if ! command -v nvim; then
         echo "Adding Neovim Repository..."
-        /usr/bin/sudo apt-add-repository ppa:neovim-ppa/stable -y 1> /dev/null
+        if [ "$distro_ver" = "16.04" ]  || [ "$distro_ver" = "18.04" ]; then
+            /usr/bin/sudo apt-add-repository ppa:neovim-ppa/stable -y 1> /dev/null
+        else
+            /usr/bin/sudo apt-add-repository ppa:neovim-ppa/unstable -y 1> /dev/null
         echo "Done"
+        fi
     fi
 fi
 echo
