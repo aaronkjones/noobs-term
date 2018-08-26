@@ -42,13 +42,13 @@ Noobs Terminal is a single-command installer that incorporates some of the wonde
 ## Demo
 If you want to "try before you buy", you can use Vagrant to spin up a VM.
 
-### Install Virtualbox
+1. Install Virtualbox
 [Virtualbox Downloads](https://www.virtualbox.org/wiki/Downloads)  
-### Install Vagrant
+2. Install Vagrant
 [Vagrant Downloads](https://www.vagrantup.com/downloads.html)
-### Initialize a Vagrantfile for Ubuntu 18.04
+3. Initialize a Vagrantfile for Ubuntu 18.04
 `vagrant init peru/ubuntu-18.04-desktop-amd64 --box-version 20180801.01`  
-### Start Your Ubuntu VM
+4. Start Your Ubuntu VM
 `vagrant up`  
 
 In Virtualbox, click the "Show" button. You can now run the install command below in a destructible environment.
@@ -76,21 +76,21 @@ Currently the following platforms are confirmed to be supported
 
 ### Ubuntu
 
-* Press *Ctrl* + *a*, then *I* to load Tmux plugins
-* In Gnome Terminal preferences, set Nord as your default profile
-* Set an appropriate font (e.g. Inconsolata for Powerline)
+1. Press *Ctrl* + *a*, then *I* to load Tmux plugins
+2. In Gnome Terminal preferences, set Nord as your default profile
+3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ### OSX
 
-* Press *Ctrl* + *a*, then *I* to load Tmux plugins
-* In iTerm, set your color profile to Nord
-* Set an appropriate font (e.g. Inconsolata for Powerline)
+1. Press *Ctrl* + *a*, then *I* to load Tmux plugins
+2. In iTerm, set your color profile to Nord
+3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ### Arch Linux
 
-* Press *Ctrl* + *a*, then *I* to load Tmux plugins
-* In Gnome Terminal preferences, set Nord as your default profile
-* Set an appropriate font (e.g. Inconsolata for Powerline)
+1. Press *Ctrl* + *a*, then *I* to load Tmux plugins
+2. In Gnome Terminal preferences, set Nord as your default profile
+3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ### Windows
 1. Enable WSL  
@@ -129,6 +129,10 @@ In Powershell (as Admin):
 
 8. Run Noobs-Term installer  
 `sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"` 
+
+## Uninstall
+To uninstall, run this command in your terminal:  
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term-uninstall.sh)"`
 
 ## Contributing
 Please read [CONTRIBUTING.md](https://github.com/aaronkjones/noobs-term/blob/master/CONTRIBUTING.md). 

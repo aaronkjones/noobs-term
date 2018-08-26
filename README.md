@@ -131,13 +131,8 @@ In Powershell (as Admin):
 `sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"` 
 
 ## Uninstall
-The installer stores dotfiles in your home directory in a folder called `.dotfiles` that are then symbollically linked to your home directory.
-For example,
-```
-$ls -la ~/.zshrc 
-.zshrc -> /home/akj/.dotfiles/.zshrc
-```
-It will also detect existing configs and back them up by moving them to a .backup copy (e.g. .zshrc --> .zshrc.backup). 
+To uninstall, run this command in your terminal:  
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term-uninstall.sh)"`
 
 ## Contributing
 Please read [CONTRIBUTING.md](https://github.com/aaronkjones/noobs-term/blob/master/CONTRIBUTING.md). 
