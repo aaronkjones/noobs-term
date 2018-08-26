@@ -42,13 +42,13 @@ Noobs Terminal is a single-command installer that incorporates some of the wonde
 ## Demo
 If you want to "try before you buy", you can use Vagrant to spin up a VM.
 
-1. Install Virtualbox
+1. Install Virtualbox  
 [Virtualbox Downloads](https://www.virtualbox.org/wiki/Downloads)  
-2. Install Vagrant
-[Vagrant Downloads](https://www.vagrantup.com/downloads.html)
-3. Initialize a Vagrantfile for Ubuntu 18.04
+2. Install Vagrant  
+[Vagrant Downloads](https://www.vagrantup.com/downloads.html)  
+3. Initialize a Vagrantfile for Ubuntu 18.04  
 `vagrant init peru/ubuntu-18.04-desktop-amd64 --box-version 20180801.01`  
-4. Start Your Ubuntu VM
+4. Start Your Ubuntu VM  
 `vagrant up`  
 
 In Virtualbox, click the "Show" button. You can now run the install command below in a destructible environment.
