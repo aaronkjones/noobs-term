@@ -173,7 +173,7 @@ neovim \
 	fi
 	echo
 
-	# oh my zsh
+	# reset shell
 	echo "Unset Zsh as default shell? [y]es [n]o"
 	read -r answer
 	if [ "$answer" != "${answer#[Yy]}" ]; then
