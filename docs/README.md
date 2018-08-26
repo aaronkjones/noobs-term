@@ -60,6 +60,13 @@ Currently the following platforms are confirmed to be supported
 * Arch Linux
 
 ## Install
+The installer will perform several functions including:
+* Install dependencies: git, curl, wget, zsh, tmux, neovim  
+* Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations  
+* Set default shell to Zsh  
+* Load Neovim plugins  
+* Install plugins and themes  
+
 To install, run this command in your terminal:  
 
 `sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"`  
@@ -128,6 +135,8 @@ In Powershell (as Admin):
 `sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"` 
 
 ## Uninstall
+The uninstaller allows you to remove installed dotfiles, restore backed up dotfiles, and selectively remove installed plugins.  
+
 To uninstall, run this command in your terminal:  
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term-uninstall.sh)"`
 
