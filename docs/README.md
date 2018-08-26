@@ -68,18 +68,6 @@ If you do not have wget use,
 
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh)"`
 
-<<<<<<< Updated upstream
-For Windows, see setup below.
-
-## Supported Platforms
-Currently the following platforms are confirmed to be supported
-* Ubuntu
-* macOS
-* Arch Linux
-* Windows
-
-=======
->>>>>>> Stashed changes
 ## Setup
 > Note: You will have to log out and back in for Zsh to be set as the default shell. If you don't want to log out, enter *zsh*.
 
