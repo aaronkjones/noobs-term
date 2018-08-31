@@ -164,11 +164,12 @@ neovim \
 	echo "Installing Oh My Zsh..."
 	printf "${NORMAL}"
 	# Work around to non-standard shell error when chsh in oh-my-zsh script
+	quiet_git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 	if [ $platform = 'Mac' ]; then
-		sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+		sudo dscl . -create /Users/$USER UserShell "$(which zsh)"
+	elif [ $platform = 'Linux' ]; then
+		chsh -s "$(which zsh)"
 	fi
-	wget -q -O - https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | zsh
-	rm -f "$HOME/.zshrc" # remove oh-my-zsh supplied .zshrc
 	printf "${PURP}"
 	echo "Done"
 	echo
@@ -237,8 +238,7 @@ neovim \
 	fi
 	echo
 	printf "${BLUE}"
-	echo '
-****************************************************************************************************'
+	echo '****************************************************************************************************'
 	echo '    _            __        ____      __  _                                           __     __     '
 	echo '   (_)___  _____/ /_____ _/ / /___ _/ /_(_)___  ____     _________  ____ ___  ____  / /__  / /____ '
 	echo '  / / __ \/ ___/ __/ __ `/ / / __ `/ __/ / __ \/ __ \   / ___/ __ \/ __ `__ \/ __ \/ / _ \/ __/ _ \'
