@@ -5,7 +5,7 @@ Special thanks to all of the contributors and creators of the tools and configur
 
 ![](docs/_media/preview.png)
 
-[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
+[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/aaronkjones/noobs-term/)
 
 ## What's Included
 | Feature | Description |
