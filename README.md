@@ -58,6 +58,7 @@ Currently the following platforms are confirmed to be supported
 * Ubuntu
 * macOS
 * Arch Linux
+* Windows
 
 ## Install
 The installer will perform several functions including:
