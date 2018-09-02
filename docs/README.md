@@ -47,9 +47,9 @@ If you want to "try before you buy", you can use Vagrant to spin up a VM.
 2. Install Vagrant  
 [Vagrant Downloads](https://www.vagrantup.com/downloads.html)  
 3. Initialize a Vagrantfile for Ubuntu 18.04  
-`vagrant init peru/ubuntu-18.04-desktop-amd64 --box-version 20180801.01`  
+```vagrant init peru/ubuntu-18.04-desktop-amd64 --box-version 20180801.01```  
 4. Start Your Ubuntu VM  
-`vagrant up`  
+```vagrant up```  
 
 In Virtualbox, click the "Show" button. You can now run the install command below in a destructible environment.
 
@@ -68,13 +68,13 @@ The installer will perform several functions including:
 * Load Neovim plugins  
 * Install plugins and themes  
 
-To install, run this command in your terminal:  
-
-`sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"`  
-
-If you do not have wget use,
-
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh)"`
+To install, run the following in your terminal:  
+```
+curl -O https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh
+chmod +x noobs-term.sh
+./noobs-term.sh
+rm noobs-term.sh
+```  
 
 ## Setup
 > Note: You will have to log out and back in for Zsh to be set as the default shell. If you don't want to log out, enter *zsh*.
@@ -100,26 +100,26 @@ If you do not have wget use,
 ### Windows
 1. Enable WSL  
 In Powershell (as Admin):  
-`Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+```Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux```
 2. Install Ubuntu 18.04  
 From the Windows Store, search for Ubuntu 18.04
 
 3. Install Chocolatey  
 In Powershell (as Admin):  
-`Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`  
+```Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))```  
 
 4. Install Hyper  
 In Powershell (as Admin):  
-`choco install -y hyper`
+```choco install -y hyper```
 
 5. Install Font  
 Download Inconsolata (or your preferred font), open, and click "Install"
-`https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf`
-> To install all Powerline fonts, clone the repo `https://github.com/powerline/fonts.git` and run install.ps1
+```https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf```  
+> To install all Powerline fonts, clone the repo ```https://github.com/powerline/fonts.git``` and run install.ps1
 
 6. Set shell to wsl.exe  
 In Hyper:  
-`chsh -s $(which zsh)`  
+```chsh -s $(which zsh)```  
 In preferences (Ctrl+comma), find and change shell and font settings to:
 ```
 shell: 'C:\\Windows\\System32\\wsl.exe',
@@ -130,16 +130,16 @@ fontFamily: 'Inconsolata for Powerline',
 
 7. Install Nord-Hyper  
 In Powershell (as Admin):  
-`hyper -i nord-hyper`
+```hyper -i nord-hyper```
 
 8. Run Noobs-Term installer  
-`sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"` 
+```sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"``` 
 
 ## Uninstall
 The uninstaller allows you to remove installed dotfiles, restore backed up dotfiles, and selectively remove installed plugins.  
 
 To uninstall, run this command in your terminal:  
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term-uninstall.sh)"`
+```sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term-uninstall.sh)"```
 
 ## Contributing
 Please read [CONTRIBUTING.md](https://github.com/aaronkjones/noobs-term/blob/master/CONTRIBUTING.md). 
