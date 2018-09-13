@@ -1,11 +1,26 @@
-## Overview
+- [Overview](#Overview)
+- [What's Included](#Included)
+- [Features](#Features)
+- [Resources](#Resources)
+- [Demo](#Demo)
+- [Supported Platforms](#Supported)
+- [Install](#Install)
+- [Setup](#Setup)
+  * [Ubuntu](#Ubuntu)
+  * [OSX](#OSX)
+  * [Arch](#Arch)
+  * [Windows](#Windows)
+- [Uninstall](#Uninstall)
+- [Contributing](#Contributing)
+
+# Overview
 Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.  
 
 Special thanks to all of the contributors and creators of the tools and configurations included.
 
 ![](docs/_media/preview.png)
 
-## What's Included
+# Included
 | Feature | Description |
 | --- | --- |
 | [zsh](https://en.wikipedia.org/wiki/Z_shell) | a popular shell with features like completion, path correction, spelling correction, and more |
@@ -18,7 +33,7 @@ Special thanks to all of the contributors and creators of the tools and configur
 | [nord-vim](https://github.com/arcticicestudio/nord-vim) | An arctic, north-bluish clean and elegant Vim color theme 
 | [imp](https://github.com/aaronkjones/Imp) | My modified Imp theme by [igormp](https://github.com/igormp/Imp) | 
 
-## Features
+# Features
 * Auto-completion
 * Auto-suggestion
 * Command validation
@@ -33,13 +48,13 @@ Special thanks to all of the contributors and creators of the tools and configur
 
 ![](docs/_media/zsh-autocompletion-suggestion.gif)
 
-## Resources
+# Resources
 * [Awesome Tmux](https://github.com/rothgar/awesome-tmux)  
 * [Awesome Vim](https://github.com/akrawchyk/awesome-vim)  
 * [VimAwesome](https://vimawesome.com)  
 * [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)  
 
-## Demo
+# Demo
 If you want to "try before you buy", you can use Vagrant to spin up a VM.
 
 1. Install Virtualbox  
@@ -51,16 +66,16 @@ If you want to "try before you buy", you can use Vagrant to spin up a VM.
 4. Start Your Ubuntu VM  
 ```vagrant up```  
 
-In Virtualbox, click the "Show" button. You can now run the install command below in a destructible environment.
+In Virtualbox, click the "Show" button. You can now run the [install](#Install) command below in a destructible environment.
 
-## Supported Platforms
+# Supported
 Currently the following platforms are confirmed to be supported
 * Ubuntu
 * macOS
 * Arch Linux
 * Windows
 
-## Install
+# Install
 The installer will perform several functions including:
 * Install dependencies: git, curl, wget, zsh, tmux, neovim  
 * Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations  
@@ -77,28 +92,28 @@ rm noobs-term.sh
 ```  
 
 
-## Setup
+# Setup
 > Note: You will have to log out and back in for Zsh to be set as the default shell. If you don't want to log out, enter *zsh*.
 
-### Ubuntu
+## Ubuntu
 
 1. Press *Ctrl* + *a*, then *I* to load Tmux plugins
 2. In Gnome Terminal preferences, set Nord as your default profile
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
-### OSX
+## OSX
 
 1. Press *Ctrl* + *a*, then *I* to load Tmux plugins
 2. In iTerm, set your color profile to Nord
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
-### Arch Linux
+## Arch
 
 1. Press *Ctrl* + *a*, then *I* to load Tmux plugins
 2. In Gnome Terminal preferences, set Nord as your default profile
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
-### Windows
+## Windows
 1. Enable WSL  
 In Powershell (as Admin):  
 ```Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux```
@@ -136,11 +151,11 @@ In Powershell (as Admin):
 8. Run Noobs-Term installer  
 ```sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"``` 
 
-## Uninstall
+# Uninstall
 The uninstaller allows you to remove installed dotfiles, restore backed up dotfiles, and selectively remove installed plugins.  
 
 To uninstall, run this command in your terminal:  
 ```sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term-uninstall.sh)"```
 
-## Contributing
+# Contributing
 Please read [CONTRIBUTING.md](https://github.com/aaronkjones/noobs-term/blob/master/CONTRIBUTING.md). 
