@@ -168,7 +168,7 @@ neovim \
 	if [ $platform = 'Mac' ]; then
 		sudo dscl . -create /Users/$USER UserShell "$(which zsh)"
 	elif [ $platform = 'Linux' ]; then
-		chsh -s "$(which zsh)"
+		chsh -s "$(which zsh) $(whoami)"
 	fi
 	printf "${PURP}"
 	echo "Done"
