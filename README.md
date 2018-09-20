@@ -20,7 +20,13 @@ Special thanks to all of the contributors and creators of the tools and configur
 
 ![](docs/_media/preview.png)
 
+<<<<<<< HEAD
 # Included
+=======
+[![GitHub release](https://img.shields.io/github/release/aaronkjones/noobs-term.svg)](https://github.com/aaronkjones/noobs-term/)
+
+## What's Included
+>>>>>>> hotfix/chsh
 | Feature | Description |
 | --- | --- |
 | [zsh](https://en.wikipedia.org/wiki/Z_shell) | a popular shell with features like completion, path correction, spelling correction, and more |
