@@ -1,10 +1,28 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  
+- [Overview](#overview)
+- [What's Included](#whats-included)
+- [Features](#features)
+- [Resources](#resources)
+- [Demo](#demo)
+- [Supported Platforms](#supported-platforms)
+- [Install](#install)
+- [Setup](#setup)
+  - [Ubuntu](#ubuntu)
+  - [OSX](#osx)
+  - [Arch Linux](#arch-linux)
+  - [Windows](#windows)
+- [Uninstall](#uninstall)
+- [Contributing](#contributing)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Overview
 ![](_media/cover_preview_lrg.png)  
 Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.   
 
 **Special thanks to all of the contributors and creators of the tools and configurations included.**
-
-[![GitHub release](https://img.shields.io/github/release/aaronkjones/noobs-term.svg)](https://github.com/aaronkjones/noobs-term/)
 
 ## What's Included
 | Feature | Description |
@@ -74,7 +92,6 @@ To install, run the following in your terminal:
 curl -O https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh
 chmod +x noobs-term.sh
 ./noobs-term.sh
-rm noobs-term.sh
 ```  
 
 ## Setup
@@ -134,13 +151,16 @@ In Powershell (as Admin):
 ```hyper -i nord-hyper```
 
 8. Run Noobs-Term installer  
-```sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"``` 
 
 ## Uninstall
 The uninstaller allows you to remove installed dotfiles, restore backed up dotfiles, and selectively remove installed plugins.  
 
 To uninstall, run this command in your terminal:  
-```sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term-uninstall.sh)"```
+```
+git clone https://github.com/aaronkjones/noobs-term.git
+chmod +x noobs-term-uninstall.sh)"
+./noobs-term-uninstall.sh
+```
 
 ## Contributing
 Please read [CONTRIBUTING.md](https://github.com/aaronkjones/noobs-term/blob/master/CONTRIBUTING.md). 
