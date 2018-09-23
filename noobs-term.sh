@@ -62,6 +62,7 @@ backup_dotfiles() {
 	done
 	cp -rf "$dotfiles_dir" "$dotfiles_dir.backup" 2>/dev/null || :
 	cp -f "$nvim_config" "$HOME/.config/nvim/init.vim.backup" 2>/dev/null || :
+	cp -rf "$HOME/.oh-my-zsh" "$HOME/.oh-my-zsh.backup"
 	echo "Done"
 }
 
@@ -73,6 +74,7 @@ remove_old_dotfiles() {
 	done
 	rm -rf "$dotfiles_dir"
 	rm -f "$nvim_config"
+	rm -rf "$HOME/.oh-my-zsh"
 	echo "Done"
 }
 
@@ -168,7 +170,7 @@ quiet_git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 if [ $platform = 'Mac' ]; then
 	sudo dscl . -create /Users/$USER UserShell "$(which zsh)"
 elif [ $platform = 'Linux' ]; then
-	chsh -s "$(which zsh) $(whoami)"
+	sudo chsh -s "$(which zsh) $(whoami)"
 fi
 printf "${PURP}"
 echo "Done"
