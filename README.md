@@ -87,14 +87,14 @@ Currently the following platforms are confirmed to be supported
 
 # Install
 
-The installer wil:
+The installer will:
 * Install dependencies: git, curl, wget, zsh, tmux, neovim  
 * Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations  
 * Set default shell to Zsh  
 * Load Neovim plugins  
 * Install plugins and themes  
 
-To install, run the following in your terminal:  
+To install, run the following commands in your terminal:  
 
 ```
 git clone https://github.com/aaronkjones/noobs-term.git
