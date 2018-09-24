@@ -1,33 +1,32 @@
-main() {
+#!/bin/bash
+set -e
 
-	set -e
+# colors
+if which tput >/dev/null 2>&1; then
+	ncolors=$(tput colors)
+fi
+if [ -t 1 ] && [ -n "$ncolors" ] && [ "$ncolors" -ge 8 ]; then
+	BLUE="$(tput setaf 4)"
+	PURP="$(tput setaf 5)"
+	BOLD="$(tput bold)"
+	NORMAL="$(tput sgr0)"
+else
+	BLUE=""
+	PURP=""
+	BOLD=""
+	NORMAL=""
+fi
 
-	# colors
-	if which tput >/dev/null 2>&1; then
-		ncolors=$(tput colors)
-	fi
-	if [ -t 1 ] && [ -n "$ncolors" ] && [ "$ncolors" -ge 8 ]; then
-		BLUE="$(tput setaf 4)"
-		PURP="$(tput setaf 5)"
-		BOLD="$(tput bold)"
-		NORMAL="$(tput sgr0)"
-	else
-		BLUE=""
-		PURP=""
-		BOLD=""
-		NORMAL=""
-	fi
-
-	# dotfiles
-	dotfiles=".tmux.conf \
+# dotfiles
+dotfiles=".tmux.conf \
 .zshrc \
 .tmux \
 .zsh \
 .oh-my-zsh \
 "
 
-	# package dependencies
-	dependencies="git \
+# package dependencies
+dependencies="git \
 curl \
 wget \
 zsh \
@@ -170,7 +169,7 @@ quiet_git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 if [ $platform = 'Mac' ]; then
 	sudo dscl . -create /Users/$USER UserShell "$(which zsh)"
 elif [ $platform = 'Linux' ]; then
-	command -v zsh || sudo chsh -s "$(which zsh) $(whoami)"
+	chsh -s "$(which zsh)"
 fi
 printf "${PURP}"
 echo "Done"
@@ -265,6 +264,3 @@ echo ''
 echo '      * Set an appropriate font (e.g. Inconsolata for Powerline)'
 echo ''
 echo ''
-
-}
-main
