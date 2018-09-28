@@ -169,7 +169,7 @@ quiet_git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 if [ $platform = 'Mac' ]; then
 	sudo dscl . -create /Users/$USER UserShell "$(which zsh)"
 elif [ $platform = 'Linux' ]; then
-	chsh -s "$(which zsh)"
+	sudo chsh -s "$(which zsh)" "$(whoami)"
 fi
 printf "${PURP}"
 echo "Done"
