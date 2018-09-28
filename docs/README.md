@@ -87,11 +87,13 @@ The installer will perform several functions including:
 * Load Neovim plugins  
 * Install plugins and themes  
 
-To install, run the following in your terminal:  
+To install, run the following commands in your terminal:  
+
 ```
-curl -O https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh
+git clone https://github.com/aaronkjones/noobs-term.git
+cd noobs-term
 chmod +x noobs-term.sh
-./noobs-term.sh
+sh noobs-term.sh
 ```  
 
 ## Setup
@@ -153,13 +155,15 @@ In Powershell (as Admin):
 8. Run Noobs-Term installer  
 
 ## Uninstall
+
 The uninstaller allows you to remove installed dotfiles, restore backed up dotfiles, and selectively remove installed plugins.  
 
 To uninstall, run this command in your terminal:  
 ```
 git clone https://github.com/aaronkjones/noobs-term.git
+cd noobs-term
 chmod +x noobs-term-uninstall.sh)"
-./noobs-term-uninstall.sh
+sh noobs-term-uninstall.sh
 ```
 
 ## Contributing
