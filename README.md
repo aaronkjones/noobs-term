@@ -32,13 +32,13 @@ Special thanks to all of the contributors and creators of the tools and configur
 | --- | --- |
 | [zsh](https://en.wikipedia.org/wiki/Z_shell) | a popular shell with features like completion, path correction, spelling correction, and more |
 | [tmux](https://github.com/tmux/tmux) | terminal muxiplier allows you to manage multiple terminal sessions from a single window |
-| [neovim](https://neovim.io/) | a project that seeks to aggressively refactor Vim |
+| [neovim](https://neovim.io/) | a project that seeks to aggressively refactor vim |
 | [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) | a framework for managing your zsh configuration |
 | [vim-sensible](https://github.com/tpope/vim-sensible) | vim settings everyone can agree on  
 | [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible) | tmux settings everyone can agree on |
 | [nord-tmux](https://github.com/arcticicestudio/nord-tmux) | An arctic, north-bluish clean and elegant tmux color theme |
-| [nord-vim](https://github.com/arcticicestudio/nord-vim) | An arctic, north-bluish clean and elegant Vim color theme 
-| [imp](https://github.com/aaronkjones/Imp) | My modified Imp theme by [igormp](https://github.com/igormp/Imp) | 
+| [nord-vim](https://github.com/arcticicestudio/nord-vim) | An arctic, north-bluish clean and elegant vim color theme 
+| [spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt) | A zsh prompt for Astronaut
 
 # Features
 
@@ -58,10 +58,10 @@ Special thanks to all of the contributors and creators of the tools and configur
 
 # Resources
 
-* [Awesome Tmux](https://github.com/rothgar/awesome-tmux)  
-* [Awesome Vim](https://github.com/akrawchyk/awesome-vim)  
+* [Awesome tmux](https://github.com/rothgar/awesome-tmux)  
+* [Awesome vim](https://github.com/akrawchyk/awesome-vim)  
 * [VimAwesome](https://vimawesome.com)  
-* [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)  
+* [Awesome zsh](https://github.com/unixorn/awesome-zsh-plugins)  
 
 # Demo
 
@@ -90,7 +90,7 @@ Currently the following platforms are confirmed to be supported
 The installer will:
 * Install dependencies: git, curl, wget, zsh, tmux, neovim  
 * Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations  
-* Set default shell to Zsh  
+* Set default shell to zsh  
 * Load Neovim plugins  
 * Install plugins and themes  
 
@@ -105,23 +105,23 @@ chmod +x noobs-term.sh
 
 # Setup
 
-> Note: You will have to log out and back in for Zsh to be set as the default shell. If you don't want to log out, enter *zsh*.
+> Note: You will have to log out and back in for zsh to be set as the default shell. If you don't want to log out, enter *zsh*.
 
 ## Ubuntu
 
-1. Press *Ctrl* + *a*, then *I* to load Tmux plugins
+1. Press *Ctrl* + *a*, then *I* to load tmux plugins
 2. In Gnome Terminal preferences, set Nord as your default profile
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ## OSX
 
-1. Press *Ctrl* + *a*, then *I* to load Tmux plugins
+1. Press *Ctrl* + *a*, then *I* to load tmux plugins
 2. In iTerm, set your color profile to Nord
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ## Arch
 
-1. Press *Ctrl* + *a*, then *I* to load Tmux plugins
+1. Press *Ctrl* + *a*, then *I* to load tmux plugins
 2. In Gnome Terminal preferences, set Nord as your default profile
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
