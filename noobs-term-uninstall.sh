@@ -225,11 +225,13 @@ neovim \
 	fi
 	echo
 
+if [ -x "$(command -v nvim)" ]; then
 	# reload nvim plugins
 	echo "Reloading Neovim plugins..."
 	nvim +PlugInstall +qa || echo "Something went wrong reloading plugins or Neovim was removed. Check init.vim for errors and try again."
 	echo "Done"
 	echo
+fi
 
 	# remove imp theme for zsh
 	echo "Remove Spaceship-prompt for Zsh? [y]es [n]o"
