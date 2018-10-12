@@ -232,12 +232,13 @@ neovim \
 	echo
 
 	# remove imp theme for zsh
-	echo "Remove Imp theme for Zsh? [y]es [n]o"
+	echo "Remove Spaceship-prompt for Zsh? [y]es [n]o"
 	read -r answer
 	if [ "$answer" != "${answer#[Yy]}" ]; then
-		rm -f "$HOME/.oh-my-zsh/themes/imp.zsh-theme"
+		rm -f "$HOME/.oh-my-zsh/themes/spaceship-prompt"
+		rm "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme"
 	elif [ "$answer" != "${answer#[Nn]}" ]; then
-		echo "Keeping Imp theme"
+		echo "Keeping Spaceship-prompt theme"
 	fi
 	echo
 
