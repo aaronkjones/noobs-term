@@ -236,11 +236,11 @@ neovim \
 	read -r answer
 	if [ "$answer" != "${answer#[Yy]}" ]; then
 		rm -f "$HOME/.oh-my-zsh/themes/spaceship-prompt"
-		rm "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme"
-	elif [ "$answer" != "${answer#[Nn]}" ]; then
-		echo "Keeping Spaceship-prompt theme"
-	fi
-	echo
+	rm -f "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme"
+elif [ "$answer" != "${answer#[Nn]}" ]; then
+	echo "Keeping Spaceship-prompt theme"
+fi
+echo
 
 	echo "Uninstall complete"
 }
