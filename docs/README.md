@@ -11,20 +11,20 @@
 - [Setup](#setup)
   - [Ubuntu](#ubuntu)
   - [OSX](#osx)
-  - [Arch Linux](#arch-linux)
+  - [Arch](#arch)
   - [Windows](#windows)
 - [Uninstall](#uninstall)
 - [Contributing](#contributing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Overview
+# Overview
 ![](_media/cover_preview_lrg.png)  
 Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.   
 
 **Special thanks to all of the contributors and creators of the tools and configurations included.**
 
-## What's Included
+# What's Included
 | Feature | Description |
 | --- | --- |
 | [zsh](https://en.wikipedia.org/wiki/Z_shell) | a popular shell with features like completion, path correction, spelling correction, and more |
@@ -37,7 +37,7 @@ Noobs Terminal is a single-command installer that incorporates some of the wonde
 | [nord-vim](https://github.com/arcticicestudio/nord-vim) | An arctic, north-bluish clean and elegant Vim color theme 
 | [imp](https://github.com/aaronkjones/Imp) | My modified Imp theme by [igormp](https://github.com/igormp/Imp) | 
 
-## Features
+# Features
 * Auto-completion
 * Auto-suggestion
 * Command validation
@@ -52,13 +52,13 @@ Noobs Terminal is a single-command installer that incorporates some of the wonde
 
 ![](_media/zsh-autocompletion-suggestion.gif)
 
-## Resources
+# Resources
 * [Awesome Tmux](https://github.com/rothgar/awesome-tmux)  
 * [Awesome Vim](https://github.com/akrawchyk/awesome-vim)  
 * [VimAwesome](https://vimawesome.com)  
 * [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)  
 
-## Demo
+# Demo
 If you want to "try before you buy", you can use Vagrant to spin up a VM.
 
 1. Install Virtualbox  
@@ -72,14 +72,14 @@ If you want to "try before you buy", you can use Vagrant to spin up a VM.
 
 In Virtualbox, click the "Show" button. You can now run the install command below in a destructible environment.
 
-## Supported Platforms
+# Supported Platforms
 Currently the following platforms are confirmed to be supported
 * Ubuntu
 * macOS
 * Arch Linux
 * Windows
 
-## Install
+# Install
 The installer will perform several functions including:
 * Install dependencies: git, curl, wget, zsh, tmux, neovim  
 * Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations  
@@ -96,28 +96,29 @@ chmod +x noobs-term.sh
 sh noobs-term.sh
 ```  
 
-## Setup
+# Setup
 > Note: You will have to log out and back in for Zsh to be set as the default shell. If you don't want to log out, enter *zsh*.
 
-### Ubuntu
+## Ubuntu
 
-1. Press *Ctrl* + *a*, then *I* to load Tmux plugins
+1. Press `Ctrl` + `a`, then <kbd>I</kbd> to load tmux plugins
 2. In Gnome Terminal preferences, set Nord as your default profile
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
-### OSX
+## OSX
 
-1. Press *Ctrl* + *a*, then *I* to load Tmux plugins
+1. Press `Ctrl` + `a`, then <kbd>I</kbd> to load tmux plugins
 2. In iTerm, set your color profile to Nord
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
-### Arch Linux
+## Arch
 
-1. Press *Ctrl* + *a*, then *I* to load Tmux plugins
+1. Press `Ctrl` + `a`, then <kbd>I</kbd> to load tmux plugins
 2. In Gnome Terminal preferences, set Nord as your default profile
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
-### Windows
+
+## Windows
 1. Enable WSL  
 In Powershell (as Admin):  
 ```Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux```
@@ -154,7 +155,7 @@ In Powershell (as Admin):
 
 8. Run Noobs-Term installer  
 
-## Uninstall
+# Uninstall
 
 The uninstaller allows you to remove installed dotfiles, restore backed up dotfiles, and selectively remove installed plugins.  
 
@@ -166,5 +167,5 @@ chmod +x noobs-term-uninstall.sh)"
 sh noobs-term-uninstall.sh
 ```
 
-## Contributing
+# Contributing
 Please read [CONTRIBUTING.md](https://github.com/aaronkjones/noobs-term/blob/master/CONTRIBUTING.md). 
