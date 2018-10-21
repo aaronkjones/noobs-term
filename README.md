@@ -109,19 +109,19 @@ chmod +x noobs-term.sh
 
 ## Ubuntu
 
-1. Press `Ctrl` + `a`, then <kbd>I</kbd> to load tmux plugins
+1. Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
 2. In Gnome Terminal preferences, set Nord as your default profile
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ## OSX
 
-1. Press `Ctrl` + `a`, then <kbd>I</kbd> to load tmux plugins
+1. Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
 2. In iTerm, set your color profile to Nord
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ## Arch
 
-1. Press `Ctrl` + `a`, then <kbd>I</kbd> to load tmux plugins
+1. Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
 2. In Gnome Terminal preferences, set Nord as your default profile
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
