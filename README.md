@@ -71,7 +71,7 @@ If you want to "try before you buy", you can use Vagrant to spin up a VM.
 2. Install Vagrant  
 [Vagrant Downloads](https://www.vagrantup.com/downloads.html)  
 3. Initialize a Vagrantfile for Ubuntu 18.04  
-`vagrant init peru/ubuntu-18.04-desktop-amd64 --box-version 20180801.01`
+`vagrant init peru/ubuntu-18.04-desktop-amd64`
 4. Start Your Ubuntu VM  
 `vagrant up`
 
