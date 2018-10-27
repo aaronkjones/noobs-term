@@ -61,7 +61,7 @@ backup_dotfiles() {
 	done
 	cp -rf "$dotfiles_dir" "$dotfiles_dir.backup" 2>/dev/null || :
 	cp -f "$nvim_config" "$HOME/.config/nvim/init.vim.backup" 2>/dev/null || :
-	cp -rf "$HOME/.oh-my-zsh" "$HOME/.oh-my-zsh.backup"
+	cp -rf "$HOME/.oh-my-zsh" "$HOME/.oh-my-zsh.backup" 2>/dev/null || :
 	echo "Done"
 }
 
