@@ -61,7 +61,7 @@ backup_dotfiles() {
 	done
 	cp -rf "$dotfiles_dir" "$dotfiles_dir.backup" 2>/dev/null || :
 	cp -f "$nvim_config" "$HOME/.config/nvim/init.vim.backup" 2>/dev/null || :
-	cp -rf "$HOME/.oh-my-zsh" "$HOME/.oh-my-zsh.backup"
+	cp -rf "$HOME/.oh-my-zsh" "$HOME/.oh-my-zsh.backup" 2>/dev/null || :
 	echo "Done"
 }
 
@@ -134,7 +134,7 @@ echo
 # linux
 echo "Installing dependencies..."
 if [ "$platform" = 'Linux' ]; then
-	if [ "$distro" = 'Ubuntu' ]; then
+	if [ "$distro" = 'Ubuntu' ] || [ "$distro" = 'Raspbian' ]; then
 		/usr/bin/sudo apt-get -qq update
 		for p in $dependencies; do
 			/usr/bin/sudo apt-get -qq install -y "$p"
@@ -176,7 +176,6 @@ echo "Done"
 echo
 # install dotfiles
 install_dotfiles
-echo "Done"
 echo
 #  zsh plugins
 echo "Installing Zsh plugins..."
