@@ -176,7 +176,6 @@ echo "Done"
 echo
 # install dotfiles
 install_dotfiles
-echo "Done"
 echo
 #  zsh plugins
 echo "Installing Zsh plugins..."
