@@ -20,6 +20,8 @@
 
 # Overview
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f1e9d29327b14c94bd95d064ca56931f)](https://app.codacy.com/app/aaronkjones/noobs-term?utm_source=github.com&utm_medium=referral&utm_content=aaronkjones/noobs-term&utm_campaign=Badge_Grade_Dashboard)
+
 Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.  
 
 Special thanks to all of the contributors and creators of the tools and configurations included.
