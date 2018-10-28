@@ -87,7 +87,6 @@ install_dotfiles() {
 		mkdir -p "$HOME/.config/nvim"
 	fi
 	ln -s "$dotfiles_dir/init.vim" "$nvim_config"
-	echo "Done"
 }
 
 # backup and remove dotfiles
