@@ -29,17 +29,17 @@ Noobs Terminal is a single-command installer that incorporates some of the wonde
 
 # What's Included
 
-| Feature                                                        | Description                                                                                   |
-| -------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [zsh](https://en.wikipedia.org/wiki/Z_shell)                   | a popular shell with features like completion, path correction, spelling correction, and more |
-| [tmux](https://github.com/tmux/tmux)                           | terminal muxiplier allows you to manage multiple terminal sessions from a single window       |
-| [neovim](https://neovim.io/)                                   | a project that seeks to aggressively refactor Vim                                             |
-| [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)         | a framework for managing your zsh configuration                                               |
-| [vim-sensible](https://github.com/tpope/vim-sensible)          | vim settings everyone can agree on                                                            |
-| [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible) | tmux settings everyone can agree on                                                           |
-| [nord-tmux](https://github.com/arcticicestudio/nord-tmux)      | An arctic, north-bluish clean and elegant tmux color theme                                    |
-| [nord-vim](https://github.com/arcticicestudio/nord-vim)        | An arctic, north-bluish clean and elegant Vim color theme                                     |
-| [imp](https://github.com/aaronkjones/Imp)                      | My modified Imp theme by [igormp](https://github.com/igormp/Imp)                              |
+| Feature                                                             | Description                                                                                   |
+| ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| [zsh](https://en.wikipedia.org/wiki/Z_shell)                        | a popular shell with features like completion, path correction, spelling correction, and more |
+| [tmux](https://github.com/tmux/tmux)                                | terminal muxiplier allows you to manage multiple terminal sessions from a single window       |
+| [neovim](https://neovim.io/)                                        | a project that seeks to aggressively refactor Vim                                             |
+| [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)              | a framework for managing your zsh configuration                                               |
+| [vim-sensible](https://github.com/tpope/vim-sensible)               | vim settings everyone can agree on                                                            |
+| [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)      | tmux settings everyone can agree on                                                           |
+| [nord-tmux](https://github.com/arcticicestudio/nord-tmux)           | An arctic, north-bluish clean and elegant tmux color theme                                    |
+| [nord-vim](https://github.com/arcticicestudio/nord-vim)             | An arctic, north-bluish clean and elegant Vim color theme                                     |
+| [spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt) | My modified Imp theme by [igormp](https://github.com/igormp/Imp)                              |
 
 # Features
 
