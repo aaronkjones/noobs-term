@@ -87,6 +87,7 @@ Currently the following platforms are confirmed to be supported
 - macOS
 - Arch Linux
 - Windows
+- Raspbian
 
 # Install
 
