@@ -61,7 +61,7 @@ backup_dotfiles() {
 	done
 	cp -rf "$dotfiles_dir" "$dotfiles_dir.backup" 2>/dev/null || :
 	cp -f "$nvim_config" "$HOME/.config/nvim/init.vim.backup" 2>/dev/null || :
-	cp -rf "$HOME/.oh-my-zsh" "$HOME/.oh-my-zsh.backup"
+	cp -rf "$HOME/.oh-my-zsh" "$HOME/.oh-my-zsh.backup" 2>/dev/null || :
 	echo "Done"
 }
 
@@ -87,7 +87,6 @@ install_dotfiles() {
 		mkdir -p "$HOME/.config/nvim"
 	fi
 	ln -s "$dotfiles_dir/init.vim" "$nvim_config"
-	echo "Done"
 }
 
 # backup and remove dotfiles
@@ -176,7 +175,6 @@ echo "Done"
 echo
 # install dotfiles
 install_dotfiles
-echo "Done"
 echo
 #  zsh plugins
 echo "Installing Zsh plugins..."
