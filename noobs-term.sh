@@ -134,7 +134,7 @@ echo
 # linux
 echo "Installing dependencies..."
 if [ "$platform" = 'Linux' ]; then
-	if [ "$distro" = 'Ubuntu' ]; then
+	if [ "$distro" = 'Ubuntu' ] || [ "$distro" = 'Raspbian' ]; then
 		/usr/bin/sudo apt-get -qq update
 		for p in $dependencies; do
 			/usr/bin/sudo apt-get -qq install -y "$p"
