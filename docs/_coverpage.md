@@ -2,7 +2,7 @@
 
 # NOOBS TERM
 
-> A terminal configuration for noobs.
+> A terminal configuration for ~~noobs~~ everyone.
 
 [Overview](#Overview)
 [Install](#Install)
