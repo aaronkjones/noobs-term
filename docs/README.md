@@ -29,14 +29,14 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Overview
+## Overview
 
 ![Cover preview](_media/cover_preview_lrg.png)  
 Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.
 
 **Special thanks to all of the contributors and creators of the tools and configurations included.**
 
-# What's Included
+## What's Included
 
 | Feature                                                             | Description                                                                                   |
 | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
@@ -50,63 +50,63 @@ Noobs Terminal is a single-command installer that incorporates some of the wonde
 | [nord-vim](https://github.com/arcticicestudio/nord-vim)             | An arctic, north-bluish clean and elegant Vim color theme                                     |
 | [spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt) | My modified Imp theme by [igormp](https://github.com/igormp/Imp)                              |
 
-# Showcase
+## Showcase
 
-## Completions
+### Completions
 
 ![Completions](https://i.imgur.com/EnkbeWB.png)
 
 > Completion scripts for [many](https://github.com/zsh-users/zsh-completions/tree/master/src) programs.
 
-## Auto-suggestions
+### Auto-suggestions
 
 ![Auto-suggestions](https://i.imgur.com/JKCPI1i.png)
 
 > Auto-suggestions based on command history
 
-## Command validation
+### Command validation
 
 ![Command validation](https://i.imgur.com/vTiwA5H.png)
 
 > Real-time command validation
 
-## Directory history
+### Directory history
 
 ![Directory history](https://i.imgur.com/JVzikH0.png)
 
 > Quick directory switching based on command history
 
-## Git feedback
+### Git feedback
 
 ![Git feedback](https://i.imgur.com/Ebf32Df.png)
 
 > Real-time Git feedback
 
-## Terminal multiplexing
+### Terminal multiplexing
 
 ![Terminal multiplexing](https://i.imgur.com/LOXifIg.png)
 
 > Tmux terminal multiplexing. Split windows horizontally and vertically.
 
-## Window tabbing
+### Window tabbing
 
 ![Window tabbing](https://i.imgur.com/7NsioKI.png)
 
 > Create many terminal sessions in a single window
 
-## Nord theming
+### Nord theming
 
 ![Matching Neovim theme](https://i.imgur.com/BdtmZAP.png)
 
 > Beautiful arctic bluish Nord theming for Tmux, iTerm, Gnome-terminal, and Neovim.
 
-## Persistence
+### Persistence
 
 ![Persistence](https://i.imgur.com/puwjWY9.png)
 
 > Session persistence across connection drops, reboots, and accidental closing.
 
-# Demo
+## Demo
 
 If you want to "try before you buy", you can use Vagrant to spin up a VM.
 
@@ -121,7 +121,7 @@ If you want to "try before you buy", you can use Vagrant to spin up a VM.
 
 In Virtualbox, click the "Show" button. You can now run the install command below in a destructible environment.
 
-# Supported Platforms
+## Supported Platforms
 
 Currently the following platforms are confirmed to be supported
 
@@ -131,7 +131,7 @@ Currently the following platforms are confirmed to be supported
 - Windows
 - Raspbian
 
-# Install
+## Install
 
 The installer will perform several functions including:
 
@@ -156,29 +156,29 @@ To install with a single command:
 or  
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh)"`
 
-# Setup
+## Setup
 
 > Note: You will have to log out and back in for Zsh to be set as the default shell. If you don't want to log out, enter _zsh_.
 
-## Ubuntu
+### Ubuntu
 
 1. Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
 2. In Gnome Terminal preferences, set Nord as your default profile
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
-## OSX
+### OSX
 
 1. Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
 2. In iTerm, set your color profile to Nord
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
-## Arch
+### Arch
 
 1. Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
 2. In Gnome Terminal preferences, set Nord as your default profile
 3. Set an appropriate font (e.g. Inconsolata for Powerline)
 
-## Windows
+### Windows
 
 1. Enable WSL  
    In Powershell (as Admin):  
@@ -219,7 +219,7 @@ or
 
 8. Run Noobs-Term installer
 
-# Uninstall
+## Uninstall
 
 The uninstaller allows you to remove installed dotfiles, restore backed up dotfiles, and selectively remove installed plugins.
 
@@ -232,13 +232,13 @@ chmod +x noobs-term-uninstall.sh)"
 sh noobs-term-uninstall.sh
 ```
 
-# Resources
+## Resources
 
 - [Awesome Tmux](https://github.com/rothgar/awesome-tmux)
 - [Awesome Vim](https://github.com/akrawchyk/awesome-vim)
 - [VimAwesome](https://vimawesome.com)
 - [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)
 
-# Contributing
+## Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/aaronkjones/noobs-term/blob/master/CONTRIBUTING.md).
