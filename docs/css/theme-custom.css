@@ -1,9 +1,11 @@
 :root {
-    --theme-color   : #2E3440;
+    --theme-color: #4A5467;
     --base-font-size: 14px;
     --base-background-color: #fff;
-    --cover-background-color: #fff;
+    --cover-background-color: #D8DEE9;
+    --cover-heading-color: #4A5467;
+    --cover-button-color--hover: #5E81AC;
     --cover-button-text-decoration: bold;
     --cover-button-border-radius: 0;
-    /* --cover-button-border: 0; */
+    --cover-button-border: 0;
   }
