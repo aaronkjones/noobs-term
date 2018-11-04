@@ -1,12 +1,20 @@
+# Noobs Term
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents**
-
 - [Overview](#overview)
 - [What's Included](#whats-included)
-- [Features](#features)
-- [Resources](#resources)
+- [Showcase](#showcase)
+  - [Completions](#completions)
+  - [Auto-suggestions](#auto-suggestions)
+  - [Command validation](#command-validation)
+  - [Directory history](#directory-history)
+  - [Git feedback](#git-feedback)
+  - [Terminal multiplexing](#terminal-multiplexing)
+  - [Window tabbing](#window-tabbing)
+  - [Nord theming](#nord-theming)
+  - [Persistence](#persistence)
 - [Demo](#demo)
 - [Supported Platforms](#supported-platforms)
 - [Install](#install)
@@ -16,13 +24,14 @@
   - [Arch](#arch)
   - [Windows](#windows)
 - [Uninstall](#uninstall)
+- [Resources](#resources)
 - [Contributing](#contributing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Overview
 
-![](_media/cover_preview_lrg.png)  
+![Cover preview](_media/cover_preview_lrg.png)  
 Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.
 
 **Special thanks to all of the contributors and creators of the tools and configurations included.**
@@ -41,28 +50,61 @@ Noobs Terminal is a single-command installer that incorporates some of the wonde
 | [nord-vim](https://github.com/arcticicestudio/nord-vim)             | An arctic, north-bluish clean and elegant Vim color theme                                     |
 | [spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt) | My modified Imp theme by [igormp](https://github.com/igormp/Imp)                              |
 
-# Features
+# Showcase
 
-- Auto-completion
-- Auto-suggestion
-- Command validation
-- Spell correction
-- Themes
-- Directory history
-- Git feedback
-- Aliases
-- Terminal multiplexing
-- Persistance
-- Split windows
+## Completions
 
-![](_media/zsh-autocompletion-suggestion.gif)
+![Completions](https://i.imgur.com/EnkbeWB.png)
 
-# Resources
+> Completion scripts for [many](https://github.com/zsh-users/zsh-completions/tree/master/src) programs.
 
-- [Awesome Tmux](https://github.com/rothgar/awesome-tmux)
-- [Awesome Vim](https://github.com/akrawchyk/awesome-vim)
-- [VimAwesome](https://vimawesome.com)
-- [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)
+## Auto-suggestions
+
+![Auto-suggestions](https://i.imgur.com/JKCPI1i.png)
+
+> Auto-suggestions based on command history
+
+## Command validation
+
+![Command validation](https://i.imgur.com/vTiwA5H.png)
+
+> Real-time command validation
+
+## Directory history
+
+![Directory history](https://i.imgur.com/JVzikH0.png)
+
+> Quick directory switching based on command history
+
+## Git feedback
+
+![Git feedback](https://i.imgur.com/Ebf32Df.png)
+
+> Real-time Git feedback
+
+## Terminal multiplexing
+
+![Terminal multiplexing](https://i.imgur.com/LOXifIg.png)
+
+> Tmux terminal multiplexing. Split windows horizontally and vertically.
+
+## Window tabbing
+
+![Window tabbing](https://i.imgur.com/7NsioKI.png)
+
+> Create many terminal sessions in a single window
+
+## Nord theming
+
+![Matching Neovim theme](https://i.imgur.com/BdtmZAP.png)
+
+> Beautiful arctic bluish Nord theming for Tmux, iTerm, Gnome-terminal, and Neovim.
+
+## Persistence
+
+![Persistence](https://i.imgur.com/puwjWY9.png)
+
+> Session persistence across connection drops, reboots, and accidental closing.
 
 # Demo
 
@@ -101,7 +143,7 @@ The installer will perform several functions including:
 
 To install, run the following commands in your terminal:
 
-```
+```bash
 git clone https://github.com/aaronkjones/noobs-term.git
 cd noobs-term
 chmod +x noobs-term.sh
@@ -163,13 +205,13 @@ or
    `chsh -s $(which zsh)`  
    In preferences (Ctrl+comma), find and change shell and font settings to:
 
-```
-shell: 'C:\\Windows\\System32\\wsl.exe',
-shellArgs: [],
-fontFamily: 'Inconsolata for Powerline',
-```
+    ```powershell
+    shell: 'C:\\Windows\\System32\\wsl.exe',
+    shellArgs: [],
+    fontFamily: 'Inconsolata for Powerline',
+    ```
 
-> If you want, you can add the font to the beginning to retain fallback fonts (e.g. fontFamily: 'Inconsolata for Powerline','monospace',...)
+    > If you want, you can add the font to the beginning to retain fallback fonts (e.g. fontFamily: 'Inconsolata for Powerline','monospace',...)
 
 7. Install Nord-Hyper  
    In Powershell (as Admin):  
@@ -183,12 +225,19 @@ The uninstaller allows you to remove installed dotfiles, restore backed up dotfi
 
 To uninstall, run this command in your terminal:
 
-```
+```bash
 git clone https://github.com/aaronkjones/noobs-term.git
 cd noobs-term
 chmod +x noobs-term-uninstall.sh)"
 sh noobs-term-uninstall.sh
 ```
+
+# Resources
+
+- [Awesome Tmux](https://github.com/rothgar/awesome-tmux)
+- [Awesome Vim](https://github.com/akrawchyk/awesome-vim)
+- [VimAwesome](https://vimawesome.com)
+- [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)
 
 # Contributing
 

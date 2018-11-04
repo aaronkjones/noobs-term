@@ -5,5 +5,6 @@
 > A terminal configuration for ~~noobs~~ everyone.
 
 [Overview](#Overview)
+[Showcase](#Showcase)
 [Install](#Install)
 [Code](https://github.com/aaronkjones/noobs-term)
