@@ -8,6 +8,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="/css/theme-custom.css">
 </head>
 <body>
   <div id="app"></div>
@@ -15,25 +16,25 @@
     window.$docsify = {
       coverpage: true,
       name: 'Noobs Term',
-      repo: '',
       owner: 'aaronkjones',
-      themeable: {
-          readyTransition : true, // default
-          responsiveTables: true  // default
-      }
-    }
+      auto2top   : true,
+      // PLUGINS
+      // -----------------------------------------------------------------
+      executeScript: true,
+      ga    : 'UA-124243953-1',
+    };
   </script>
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-124243953-1', 'auto');
-      ga('send', 'pageview');
-    </script>
   <script src="https://unpkg.com/docsify/lib/docsify.min.js" data-ga="UA-124243953-1"></script>
   <script src="https://unpkg.com/docsify-themeable"></script>
-  <script src="https://unpkg.com/docsify-copy-code@2"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/docsify"></script>
+  <script src="https://unpkg.com/docsify-themeable"></script>
+  <script src="https://unpkg.com/docsify-tabs"></script>
+  <script src="https://unpkg.com/docsify-copy-code"></script>
+  <script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
+  <script src="https://unpkg.com/docsify/lib/plugins/ga.min.js"></script>
+  <script src="https://unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-bash.min.js"></script>
 </body>
 </html>

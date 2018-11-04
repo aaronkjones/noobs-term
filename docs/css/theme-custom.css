@@ -1,0 +1,9 @@
+:root {
+    --theme-color   : #2E3440;
+    --base-font-size: 14px;
+    --base-background-color: #fff;
+    --cover-background-color: #fff;
+    --cover-button-text-decoration: bold;
+    --cover-button-border-radius: 0;
+    /* --cover-button-border: 0; */
+  }
