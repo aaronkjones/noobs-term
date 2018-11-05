@@ -7,12 +7,12 @@
 
 Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.
 
-- [Homepage](https://noobs-term.com) - Documentation
+-   [Homepage](https://noobs-term.com) - Documentation
 
 ## Contributing
 
-- See [CONTRIBUTING](CONTRIBUTING.md) for steps on how you can contribute to this project.
+-   See [CONTRIBUTING](CONTRIBUTING.md) for steps on how you can contribute to this project.
 
 ## License
 
-- This project is licensed under the MIT license type. See [LICENSE](LICENSE) for details
+-   This project is licensed under the MIT license type. See [LICENSE](LICENSE) for details
