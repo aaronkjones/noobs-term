@@ -57,9 +57,9 @@ Noobs Terminal is a terminal bundle that incorporates some of the wonderful term
 
 ### Completions
 
-![Completions](https://i.imgur.com/EnkbeWB.png)
-
 Completion scripts for [many](https://github.com/zsh-users/zsh-completions/tree/master/src) programs.
+
+![Completions](https://i.imgur.com/EnkbeWB.png)
 
 ### Auto-suggestions
 
