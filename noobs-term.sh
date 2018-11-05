@@ -8,12 +8,10 @@ fi
 if [ -t 1 ] && [ -n "$ncolors" ] && [ "$ncolors" -ge 8 ]; then
 	BLUE="$(tput setaf 4)"
 	PURP="$(tput setaf 5)"
-	BOLD="$(tput bold)"
 	NORMAL="$(tput sgr0)"
 else
 	BLUE=""
 	PURP=""
-	BOLD=""
 	NORMAL=""
 fi
 
