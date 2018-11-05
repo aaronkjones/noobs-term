@@ -3,32 +3,34 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d83cf5c6315940b684318b0d7c756572)](https://www.codacy.com/app/aaronkjones/noobs-term?utm_source=github.com&utm_medium=referral&utm_content=aaronkjones/noobs-term&utm_campaign=Badge_Grade)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/aaronkjones/noobs-term/blob/master/LICENSE)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=http://noobs-term.com&text=A%20terminal%20bundle%20for%20everyone&hashtags=tmux,zsh,command-line)
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
+
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Overview](#overview)
-- [What's Included](#whats-included)
-- [Showcase](#showcase)
-  - [Completions](#completions)
-  - [Auto-suggestions](#auto-suggestions)
-  - [Command validation](#command-validation)
-  - [Directory history](#directory-history)
-  - [Git feedback](#git-feedback)
-  - [Terminal multiplexing](#terminal-multiplexing)
-  - [Window tabbing](#window-tabbing)
-  - [Nord theming](#nord-theming)
-  - [Persistence](#persistence)
-- [Demo](#demo)
-- [Supported Platforms](#supported-platforms)
-- [Install](#install)
-- [Setup](#setup)
-  - [Ubuntu](#ubuntu)
-  - [OSX](#osx)
-  - [Arch](#arch)
-  - [Windows](#windows)
-- [Uninstall](#uninstall)
-- [Resources](#resources)
-- [Contributing](#contributing)
+-   [Overview](#overview)
+-   [What's Included](#whats-included)
+-   [Showcase](#showcase)
+    -   [Completions](#completions)
+    -   [Auto-suggestions](#auto-suggestions)
+    -   [Command validation](#command-validation)
+    -   [Directory history](#directory-history)
+    -   [Git feedback](#git-feedback)
+    -   [Terminal multiplexing](#terminal-multiplexing)
+    -   [Window tabbing](#window-tabbing)
+    -   [Nord theming](#nord-theming)
+    -   [Persistence](#persistence)
+-   [Demo](#demo)
+-   [Supported Platforms](#supported-platforms)
+-   [Install](#install)
+-   [Setup](#setup)
+    -   [Ubuntu](#ubuntu)
+    -   [OSX](#osx)
+    -   [Arch](#arch)
+    -   [Windows](#windows)
+-   [Uninstall](#uninstall)
+-   [Resources](#resources)
+-   [Contributing](#contributing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -111,14 +113,14 @@ Noobs Terminal is a terminal bundle that incorporates some of the wonderful term
 
 If you want to "try before you buy", you can use Vagrant to spin up a VM.
 
-1. Install Virtualbox  
-   [Virtualbox Downloads](https://www.virtualbox.org/wiki/Downloads)
-2. Install Vagrant  
-   [Vagrant Downloads](https://www.vagrantup.com/downloads.html)
-3. Initialize a Vagrantfile for Ubuntu 18.04  
-   `vagrant init peru/ubuntu-18.04-desktop-amd64 --box-version 20180801.01`
-4. Start Your Ubuntu VM  
-   `vagrant up`
+1.  Install Virtualbox  
+    [Virtualbox Downloads](https://www.virtualbox.org/wiki/Downloads)
+2.  Install Vagrant  
+    [Vagrant Downloads](https://www.vagrantup.com/downloads.html)
+3.  Initialize a Vagrantfile for Ubuntu 18.04  
+    `vagrant init peru/ubuntu-18.04-desktop-amd64 --box-version 20180801.01`
+4.  Start Your Ubuntu VM  
+    `vagrant up`
 
 In Virtualbox, click the "Show" button. You can now run the install command below in a destructible environment.
 
@@ -126,21 +128,21 @@ In Virtualbox, click the "Show" button. You can now run the install command belo
 
 Currently the following platforms are confirmed to be supported
 
-- Ubuntu
-- macOS
-- Arch Linux
-- Windows
-- Raspbian
+-   Ubuntu
+-   macOS
+-   Arch Linux
+-   Windows
+-   Raspbian
 
 ## Install
 
 The installer will perform several functions including:
 
-- Install dependencies: git, curl, wget, zsh, tmux, neovim
-- Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations
-- Set default shell to Zsh
-- Load Neovim plugins
-- Install plugins and themes
+-   Install dependencies: git, curl, wget, zsh, tmux, neovim
+-   Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations
+-   Set default shell to Zsh
+-   Load Neovim plugins
+-   Install plugins and themes
 
 To install, run the following commands in your terminal:
 
@@ -163,62 +165,62 @@ or
 
 ### Ubuntu
 
-1. Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
-2. In Gnome Terminal preferences, set Nord as your default profile
-3. Set an appropriate font (e.g. Inconsolata for Powerline)
+1.  Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
+2.  In Gnome Terminal preferences, set Nord as your default profile
+3.  Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ### OSX
 
-1. Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
-2. In iTerm, set your color profile to Nord
-3. Set an appropriate font (e.g. Inconsolata for Powerline)
+1.  Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
+2.  In iTerm, set your color profile to Nord
+3.  Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ### Arch
 
-1. Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
-2. In Gnome Terminal preferences, set Nord as your default profile
-3. Set an appropriate font (e.g. Inconsolata for Powerline)
+1.  Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
+2.  In Gnome Terminal preferences, set Nord as your default profile
+3.  Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ### Windows
 
-1. Enable WSL  
-   In Powershell (as Admin):  
-   `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
-2. Install Ubuntu 18.04  
-   From the Windows Store, search for Ubuntu 18.04
+1.  Enable WSL  
+    In Powershell (as Admin):  
+    `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+2.  Install Ubuntu 18.04  
+    From the Windows Store, search for Ubuntu 18.04
 
-3. Install Chocolatey  
-   In Powershell (as Admin):  
-   `Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
+3.  Install Chocolatey  
+    In Powershell (as Admin):  
+    `Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 
-4. Install Hyper  
-   In Powershell (as Admin):  
-   `choco install -y hyper`
+4.  Install Hyper  
+    In Powershell (as Admin):  
+    `choco install -y hyper`
 
-5. Install Font  
-   Download Inconsolata (or your preferred font), open, and click "Install"
-   `https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf`
+5.  Install Font  
+    Download Inconsolata (or your preferred font), open, and click "Install"
+    `https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf`
 
-   > To install all Powerline fonts, clone the repo `https://github.com/powerline/fonts.git` and run install.ps1
+    > To install all Powerline fonts, clone the repo `https://github.com/powerline/fonts.git` and run install.ps1
 
-6. Set shell to wsl.exe  
-   In Hyper:  
-   `chsh -s $(which zsh)`  
-   In preferences (<kbd>Ctrl</kbd> + <kbd>,<kbd>), find and change shell and font settings to:
+6.  Set shell to wsl.exe  
+    In Hyper:  
+    `chsh -s $(which zsh)`  
+    In preferences (<kbd>Ctrl</kbd> + <kbd>,<kbd>), find and change shell and font settings to:
 
-   ```powershell
-   shell: 'C:\\Windows\\System32\\wsl.exe',
-   shellArgs: [],
-   fontFamily: 'Inconsolata for Powerline',
-   ```
+    ```powershell
+    shell: 'C:\\Windows\\System32\\wsl.exe',
+    shellArgs: [],
+    fontFamily: 'Inconsolata for Powerline',
+    ```
 
-   > If you want, you can add the font to the beginning to retain fallback fonts (e.g. fontFamily: 'Inconsolata for Powerline','monospace',...)
+    > If you want, you can add the font to the beginning to retain fallback fonts (e.g. fontFamily: 'Inconsolata for Powerline','monospace',...)
 
-7. Install Nord-Hyper  
-   In Powershell (as Admin):  
-   `hyper -i nord-hyper`
+7.  Install Nord-Hyper  
+    In Powershell (as Admin):  
+    `hyper -i nord-hyper`
 
-8. Run Noobs-Term installer
+8.  Run Noobs-Term installer
 
 ## Uninstall
 
@@ -241,10 +243,10 @@ or
 
 ## Resources
 
-- [Awesome Tmux](https://github.com/rothgar/awesome-tmux)
-- [Awesome Vim](https://github.com/akrawchyk/awesome-vim)
-- [VimAwesome](https://vimawesome.com)
-- [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)
+-   [Awesome Tmux](https://github.com/rothgar/awesome-tmux)
+-   [Awesome Vim](https://github.com/akrawchyk/awesome-vim)
+-   [VimAwesome](https://vimawesome.com)
+-   [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)
 
 ## Contributing
 
