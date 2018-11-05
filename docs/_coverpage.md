@@ -1,10 +1,10 @@
 ![logo](_media/cover_preview.png)
 
-# NOOBS TERM
+# Noobs Term
 
-> A terminal configuration for ~~noobs~~ everyone.
+> A terminal bundle for ~~noobs~~ everyone.
 
-[Overview](#Overview)
+[Main](#main)
 [Showcase](#Showcase)
 [Install](#Install)
 [Code](https://github.com/aaronkjones/noobs-term)

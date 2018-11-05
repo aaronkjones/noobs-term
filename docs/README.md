@@ -1,5 +1,8 @@
-# Noobs Term
+# noobs-term
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d83cf5c6315940b684318b0d7c756572)](https://www.codacy.com/app/aaronkjones/noobs-term?utm_source=github.com&utm_medium=referral&utm_content=aaronkjones/noobs-term&utm_campaign=Badge_Grade)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/aaronkjones/noobs-term/blob/master/LICENSE)
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=http://noobs-term.com&text=A%20terminal%20bundle%20for%20everyone&hashtags=tmux,zsh,command-line)
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -32,9 +35,7 @@
 ## Overview
 
 ![Cover preview](_media/cover_preview_lrg.png)  
-Noobs Terminal is a single-command installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.
-
-**Special thanks to all of the contributors and creators of the tools and configurations included.**
+Noobs Terminal is a terminal bundle that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.
 
 ## What's Included
 
@@ -48,7 +49,7 @@ Noobs Terminal is a single-command installer that incorporates some of the wonde
 | [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)      | tmux settings everyone can agree on                                                           |
 | [nord-tmux](https://github.com/arcticicestudio/nord-tmux)           | An arctic, north-bluish clean and elegant tmux color theme                                    |
 | [nord-vim](https://github.com/arcticicestudio/nord-vim)             | An arctic, north-bluish clean and elegant Vim color theme                                     |
-| [spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt) | My modified Imp theme by [igormp](https://github.com/igormp/Imp)                              |
+| [spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt) | A Zsh prompt for Astronauts                                                                   |
 
 ## Showcase
 
@@ -150,7 +151,7 @@ chmod +x noobs-term.sh
 sh noobs-term.sh
 ```
 
-To install with a single command:
+Single command install:
 
 `sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term.sh -O -)"`  
 or  
@@ -203,15 +204,15 @@ or
 6. Set shell to wsl.exe  
    In Hyper:  
    `chsh -s $(which zsh)`  
-   In preferences (Ctrl+comma), find and change shell and font settings to:
+   In preferences (<kbd>Ctrl</kbd> + <kbd>,<kbd>), find and change shell and font settings to:
 
-    ```powershell
-    shell: 'C:\\Windows\\System32\\wsl.exe',
-    shellArgs: [],
-    fontFamily: 'Inconsolata for Powerline',
-    ```
+   ```powershell
+   shell: 'C:\\Windows\\System32\\wsl.exe',
+   shellArgs: [],
+   fontFamily: 'Inconsolata for Powerline',
+   ```
 
-    > If you want, you can add the font to the beginning to retain fallback fonts (e.g. fontFamily: 'Inconsolata for Powerline','monospace',...)
+   > If you want, you can add the font to the beginning to retain fallback fonts (e.g. fontFamily: 'Inconsolata for Powerline','monospace',...)
 
 7. Install Nord-Hyper  
    In Powershell (as Admin):  
@@ -231,6 +232,12 @@ cd noobs-term
 chmod +x noobs-term-uninstall.sh)"
 sh noobs-term-uninstall.sh
 ```
+
+Single command uninstall:
+
+`sh -c "$(wget -q https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term-uninstall.sh -O -)"`  
+or  
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term-uninstall.sh)"`
 
 ## Resources
 
