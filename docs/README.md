@@ -59,55 +59,55 @@ Noobs Terminal is a terminal bundle that incorporates some of the wonderful term
 
 ![Completions](https://i.imgur.com/EnkbeWB.png)
 
-> Completion scripts for [many](https://github.com/zsh-users/zsh-completions/tree/master/src) programs.
+Completion scripts for [many](https://github.com/zsh-users/zsh-completions/tree/master/src) programs.
 
 ### Auto-suggestions
 
-![Auto-suggestions](https://i.imgur.com/JKCPI1i.png)
+Auto-suggestions based on command history
 
-> Auto-suggestions based on command history
+![Auto-suggestions](https://i.imgur.com/JKCPI1i.png)
 
 ### Command validation
 
-![Command validation](https://i.imgur.com/vTiwA5H.png)
+Real-time command validation
 
-> Real-time command validation
+![Command validation](https://i.imgur.com/vTiwA5H.png)
 
 ### Directory history
 
-![Directory history](https://i.imgur.com/JVzikH0.png)
+Quick directory switching based on command history
 
-> Quick directory switching based on command history
+![Directory history](https://i.imgur.com/JVzikH0.png)
 
 ### Git feedback
 
-![Git feedback](https://i.imgur.com/Ebf32Df.png)
+Real-time Git feedback
 
-> Real-time Git feedback
+![Git feedback](https://i.imgur.com/Ebf32Df.png)
 
 ### Terminal multiplexing
 
-![Terminal multiplexing](https://i.imgur.com/LOXifIg.png)
+Tmux terminal multiplexing. Split windows horizontally and vertically.
 
-> Tmux terminal multiplexing. Split windows horizontally and vertically.
+![Terminal multiplexing](https://i.imgur.com/LOXifIg.png)
 
 ### Window tabbing
 
-![Window tabbing](https://i.imgur.com/7NsioKI.png)
+Create many terminal sessions in a single window
 
-> Create many terminal sessions in a single window
+![Window tabbing](https://i.imgur.com/7NsioKI.png)
 
 ### Nord theming
 
-![Matching Neovim theme](https://i.imgur.com/BdtmZAP.png)
+Beautiful arctic bluish Nord theming for Tmux, iTerm, Gnome-terminal, and Neovim.
 
-> Beautiful arctic bluish Nord theming for Tmux, iTerm, Gnome-terminal, and Neovim.
+![Matching Neovim theme](https://i.imgur.com/BdtmZAP.png)
 
 ### Persistence
 
-![Persistence](https://i.imgur.com/puwjWY9.png)
+Session persistence across connection drops, reboots, and accidental closing.
 
-> Session persistence across connection drops, reboots, and accidental closing.
+![Persistence](https://i.imgur.com/puwjWY9.png)
 
 ## Demo
 
