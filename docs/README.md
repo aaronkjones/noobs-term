@@ -208,7 +208,7 @@ or
 6.  Set shell to wsl.exe  
     In Hyper:  
     `chsh -s $(which zsh)`  
-    In preferences (<kbd>Ctrl</kbd> + <kbd>,<kbd>), find and change shell and font settings to:
+    In preferences (<kbd>Ctrl</kbd> + <kbd>,</kbd>), find and change shell and font settings to:
 
     ```powershell
     shell: 'C:\\Windows\\System32\\wsl.exe',
