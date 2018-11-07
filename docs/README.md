@@ -37,7 +37,7 @@
 ## Overview
 
 ![Cover preview](_media/cover_preview_lrg.png)  
-Noobs Terminal is a terminal bundle that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.
+Noobs Term is an installer that incorporates some of the wonderful terminal programs, packages, and configurations that are commonly installed together.
 
 ## What's Included
 
@@ -51,7 +51,7 @@ Noobs Terminal is a terminal bundle that incorporates some of the wonderful term
 | [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)      | tmux settings everyone can agree on                                                           |
 | [nord-tmux](https://github.com/arcticicestudio/nord-tmux)           | An arctic, north-bluish clean and elegant tmux color theme                                    |
 | [nord-vim](https://github.com/arcticicestudio/nord-vim)             | An arctic, north-bluish clean and elegant Vim color theme                                     |
-| [spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt) | A Zsh prompt for Astronauts                                                                   |
+| [spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt) | A zsh prompt for Astronauts                                                                   |
 
 ## Showcase
 
@@ -99,7 +99,7 @@ Create many terminal sessions in a single window
 
 ### Nord theming
 
-Beautiful arctic bluish Nord theming for Tmux, iTerm, Gnome-terminal, and Neovim.
+Beautiful arctic bluish Nord theming for tmux, iTerm, Gnome terminal, and neovim.
 
 ![Matching Neovim theme](https://i.imgur.com/BdtmZAP.png)
 
@@ -111,7 +111,7 @@ Session persistence across connection drops, reboots, and accidental closing.
 
 ## Demo
 
-If you want to "try before you buy", you can use Vagrant to spin up a VM.
+If you want to "try before you buy" you can use Vagrant to spin up a VM.
 
 1.  Install Virtualbox  
     [Virtualbox Downloads](https://www.virtualbox.org/wiki/Downloads)
@@ -126,9 +126,10 @@ In Virtualbox, click the "Show" button. You can now run the install command belo
 
 ## Supported Platforms
 
-Currently the following platforms are confirmed to be supported
+Currently, the following platforms are confirmed to be supported
 
 -   Ubuntu
+-   Debian
 -   macOS
 -   Arch Linux
 -   Windows
@@ -138,10 +139,11 @@ Currently the following platforms are confirmed to be supported
 
 The installer will perform several functions including:
 
--   Install dependencies: git, curl, wget, zsh, tmux, neovim
+-   Install dependencies: git, curl, wget, 
+-   Install programs zsh, tmux, neovim
 -   Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations
--   Set default shell to Zsh
--   Load Neovim plugins
+-   Set default shell to zsh
+-   Load neovim plugins
 -   Install plugins and themes
 
 To install, run the following commands in your terminal:
@@ -161,12 +163,12 @@ or
 
 ## Setup
 
-> Note: You will have to log out and back in for Zsh to be set as the default shell. If you don't want to log out, enter _zsh_.
+> Note: You will have to log out and back in for zsh to be set as the default shell. If you don't want to log out, enter _zsh_.
 
 ### Ubuntu
 
 1.  Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
-2.  In Gnome Terminal preferences, set Nord as your default profile
+2.  In Gnome terminal preferences, set Nord as your default profile
 3.  Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ### OSX
@@ -178,7 +180,7 @@ or
 ### Arch
 
 1.  Press <kbd>Ctrl</kbd> + <kbd>a</kbd>, then <kbd>I</kbd> to load tmux plugins
-2.  In Gnome Terminal preferences, set Nord as your default profile
+2.  In Gnome terminal preferences, set Nord as your default profile
 3.  Set an appropriate font (e.g. Inconsolata for Powerline)
 
 ### Windows
@@ -220,7 +222,7 @@ or
     In Powershell (as Admin):  
     `hyper -i nord-hyper`
 
-8.  Run Noobs-Term installer
+8.  Run Noobs Term installer
 
 ## Uninstall
 
