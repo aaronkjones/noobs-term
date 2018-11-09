@@ -187,34 +187,39 @@ or
 
 ### Windows
 
-1.  Enable WSL  
-    In Powershell (as Admin):  
+1.  Enable WSL
+
+    **In Powershell (as Admin)**:  
     `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
-2.  Install Ubuntu 18.04  
+
+2.  Install Ubuntu 18.04
+
     From the Windows Store, search for Ubuntu 18.04
 
 3.  Install [Scoop](https://scoop.sh/)
-    In Powershell (as Admin):
+
     `iex (new-object net.webclient).downloadstring('https://get.scoop.sh')`
 
     > Note: if you get an error you might need to change the execution policy (i.e. enable Powershell) with Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
 4.  Add [Scoop Extras](https://github.com/lukesampson/scoop-extras)
-    In Powershell (as Admin):  
+
     `scoop bucket add extras`
 
-5.  Install Hyper  
-    In Powershell:  
+5.  Install Hyper
+
     `scoop install hyper`
 
-6.  Install Font  
+6.  Install Font
+
     Download Inconsolata (or your preferred font), open, and click "Install"
     `https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf`
 
     > To install all Powerline fonts, clone the repo `https://github.com/powerline/fonts.git` and run install.ps1
 
-7.  Set shell to wsl.exe  
-    In Hyper:  
+7.  Set shell to wsl.exe
+
+    **In Hyper**:  
     `chsh -s $(which zsh)`  
     In preferences (<kbd>Ctrl</kbd> + <kbd>,</kbd>), find and change shell and font settings to:
 
