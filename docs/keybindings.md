@@ -14,24 +14,24 @@ Key bindings can be displayed in Tmux with: <kbd>Ctrl</kbd> + <kbd>a</kbd> <kbd>
 
 ## Main
 
-|                                |                 |
-| ------------------------------ | --------------- |
-| <kbd>Ctrl</kbd> + <kbd>z</kbd> | suspend client  |
-| <kbd>!</kbd>                   | break pane      |
-| <kbd>\$</kbd>                  | rename session  |
-| <kbd>:</kbd>                   | command prompt  |
-| <kbd>?</kbd>                   | list keys       |
-| <kbd>D</kbd>                   | choose client   |
-| <kbd>L</kbd>                   | switch client   |
-| <kbd>[</kbd>                   | copy mode       |
-| <kbd>d</kbd>                   | detach client   |
-| <kbd>i</kbd>                   | display message |
-| <kbd>r</kbd>                   | refresh client  |
-| <kbd>s</kbd>                   | choose tree     |
-| <kbd>t</kbd>                   | clock mode      |
-| <kbd>w</kbd>                   | choose tree     |
-| <kbd>~</kbd>                   | show messages   |
-| <kbd>PPage</kbd>               | copy mode       |
+|                                |                       |
+| ------------------------------ | --------------------- |
+| <kbd>Ctrl</kbd> + <kbd>z</kbd> | suspend client        |
+| <kbd>!</kbd>                   | break pane            |
+| <kbd>\$</kbd>                  | rename session        |
+| <kbd>:</kbd>                   | command prompt        |
+| <kbd>?</kbd>                   | list keys             |
+| <kbd>D</kbd>                   | choose client         |
+| <kbd>L</kbd>                   | switch client         |
+| <kbd>[</kbd>                   | copy mode             |
+| <kbd>d</kbd>                   | detach client         |
+| <kbd>i</kbd>                   | display message       |
+| <kbd>r</kbd>                   | refresh client        |
+| <kbd>s</kbd>                   | choose tree (session) |
+| <kbd>t</kbd>                   | clock mode            |
+| <kbd>w</kbd>                   | choose tree (window)  |
+| <kbd>~</kbd>                   | show messages         |
+| <kbd>PPage</kbd>               | copy mode             |
 
 ## Layout
 
