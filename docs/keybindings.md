@@ -8,9 +8,9 @@ Key bindings can be displayed in Tmux with: <kbd>Ctrl</kbd> + <kbd>a</kbd> <kbd>
 
 ## Prefix
 
-|                                |                 |
-| ------------------------------ | --------------- |
-| <kbd>Ctrl</kbd> + <kbd>a</kbd> | send prefix     |
+|                                |             |
+| ------------------------------ | ----------- |
+| <kbd>Ctrl</kbd> + <kbd>a</kbd> | send prefix |
 
 ## Main
 
@@ -18,7 +18,7 @@ Key bindings can be displayed in Tmux with: <kbd>Ctrl</kbd> + <kbd>a</kbd> <kbd>
 | ------------------------------ | --------------- |
 | <kbd>Ctrl</kbd> + <kbd>z</kbd> | suspend client  |
 | <kbd>!</kbd>                   | break pane      |
-| <kbd>$</kbd>                   | rename session  |
+| <kbd>\$</kbd>                  | rename session  |
 | <kbd>:</kbd>                   | command prompt  |
 | <kbd>?</kbd>                   | list keys       |
 | <kbd>D</kbd>                   | choose client   |
@@ -71,8 +71,7 @@ Key bindings can be displayed in Tmux with: <kbd>Ctrl</kbd> + <kbd>a</kbd> <kbd>
 | <kbd>5</kbd>                   | select window 5         |
 | <kbd>6</kbd>                   | select window 6         |
 | <kbd>7</kbd>                   | select window 7         |
-| <kbd>8</kbd>                   | select window 8      
-| ------------------------------ | --------------- |   |
+| <kbd>8</kbd>                   | select window 8         |
 | <kbd>9</kbd>                   | select window 9         |
 
 ## Buffer
@@ -97,18 +96,18 @@ Key bindings can be displayed in Tmux with: <kbd>Ctrl</kbd> + <kbd>a</kbd> <kbd>
 |                                    |                   |
 | ---------------------------------- | ----------------- |
 | <kbd>;</kbd>                       | last pane         |
+| <kbd>o</kbd>                       | next pane         |
 | <kbd>Meta</kbd>                    | select pane       |
-| <kbd>m </kbd>                      | select pane       |
-| <kbd>o</kbd>                       | select pane       |
+| <kbd>m </kbd>                      | mark pane         |
 | <kbd>q</kbd>                       | display panes     |
 | <kbd>x</kbd>                       | kill pane         |
 | <kbd>z</kbd>                       | resize pane       |
 | <kbd>{</kbd>                       | swap pane         |
 | <kbd>}</kbd>                       | swap pane         |
-| <kbd>Up</kbd>                      | select pane       |
-| <kbd>Down </kbd>                   | select pane       |
-| <kbd>Left</kbd>                    | select pane       |
-| <kbd>Right</kbd>                   | select pane       |
+| <kbd>Up</kbd>                      | select pane up    |
+| <kbd>Down </kbd>                   | select pane down  |
+| <kbd>Left</kbd>                    | select pane left  |
+| <kbd>Right</kbd>                   | select pane right |
 | <kbd>Meta</kbd> + <kbd>Up</kbd>    | resize pane up    |
 | <kbd>Meta</kbd> + <kbd>Down</kbd>  | resize pane down  |
 | <kbd>Meta</kbd> + <kbd>Left</kbd>  | resize pane left  |
@@ -120,119 +119,119 @@ Key bindings can be displayed in Tmux with: <kbd>Ctrl</kbd> + <kbd>a</kbd> <kbd>
 
 ## Copy-mode
 
-|                                    |                                          |
-| ---------------------------------- | ---------------------------------------- |
-| <kbd>Ctrl</kbd> + <kbd>Space</kbd> | begin selection                          |
-| <kbd>Ctrl</kbd> + <kbd>a</kbd>     | start of line                            |
-| <kbd>Ctrl</kbd> + <kbd>b</kbd>     | cursor left                              |
-| <kbd>Ctrl</kbd> + <kbd>c</kbd>     | cancel                                   |
-| <kbd>Ctrl</kbd> + <kbd>e</kbd>     | end of line                              |
-| <kbd>Ctrl</kbd> + <kbd>f</kbd>     | cursor right                             |
-| <kbd>Ctrl</kbd> + <kbd>g </kbd>    | clear selection                          |
-| <kbd>Ctrl</kbd> + <kbd>k</kbd>     | copy end of line                         |
-| <kbd>Ctrl</kbd> + <kbd>n</kbd>     | cursor down                              |
-| <kbd>Ctrl</kbd> + <kbd>p</kbd>     | cursor up                                |
-| <kbd>Ctrl</kbd> + <kbd>r</kbd>     | search backward                          |
-| <kbd>Ctrl</kbd> + <kbd>s </kbd>    | search forward                           |
-| <kbd>Ctrl</kbd> + <kbd>v </kbd>    | page down                                |
-| <kbd>Ctrl</kbd> + <kbd>w </kbd>    | copy selection and cancel                |
-| <kbd>Escape </kbd>                 | cancel                                   |
-| <kbd>Space</kbd>                   | page down                                |
-| <kbd>,</kbd>                       | jump reverse                             |
-| <kbd>;</kbd>                       | jump again                               |
-| <kbd>F</kbd>                       | jump backward jump backward \%%%\|       |
-| <kbd>N</kbd>                       | search reverse                           |
-| <kbd>R</kbd>                       | rectangle toggle                         |
-| <kbd>T</kbd>                       | jump to backward jump to backward \%%%\| |
-| <kbd>f</kbd>                       | jump forward jump forward \%%%\|         |
-| <kbd>g</kbd>                       | goto line goto line \%%%\|               |
-| <kbd>n</kbd>                       | search again                             |
-| <kbd>q</kbd>                       | cancel                                   |
-| <kbd>t</kbd>                       | jump to forward jump to forward \%%%\|   |
-| <kbd>Home</kbd>                    | start of line                            |
-| <kbd>End</kbd>                     | end of line                              |
-| <kbd>NPage</kbd>                   | page down                                |
-| <kbd>PPage</kbd>                   | page up                                  |
-| <kbd>Up</kbd>                      | cursor up                                |
-| <kbd>Down</kbd>                    | cursor down                              |
-| <kbd>Left</kbd>                    | cursor left                              |
-| <kbd>Right</kbd>                   | cursor right                             |
-| <kbd>Meta</kbd> + <kbd>< </kbd>    | history top                              |
-| <kbd>Meta</kbd> + <kbd>></kbd>     | history bottom                           |
-| <kbd>Meta</kbd> + <kbd>R</kbd>     | top line                                 |
-| <kbd>Meta</kbd> + <kbd>b</kbd>     | previous word                            |
-| <kbd>Meta</kbd> + <kbd>f</kbd>     | next word end                            |
-| <kbd>Meta</kbd> + <kbd>Meta</kbd>  | back to indentation                      |
-| <kbd>Meta</kbd> + <kbd>r</kbd>     | middle line                              |
-| <kbd>Meta</kbd> + <kbd>v</kbd>     | page up                                  |
-| <kbd>Meta</kbd> + <kbd>w</kbd>     | copy selection and cancel                |
-| <kbd>Meta</kbd> + <kbd>{</kbd>     | previous paragraph                       |
-| <kbd>Meta</kbd> + <kbd>}</kbd>     | next paragraph                           |
-| <kbd>Meta</kbd> + <kbd>Up</kbd>    | halfpage up                              |
-| <kbd>Meta</kbd> + <kbd>Down</kbd>  | halfpage down                            |
-| <kbd>Ctrl</kbd> + <kbd>Up</kbd>    | scroll up                                |
-| <kbd>Ctrl</kbd> + <kbd>Down</kbd>  | scroll down                              |
+|                                    |                           |
+| ---------------------------------- | ------------------------- |
+| <kbd>Ctrl</kbd> + <kbd>Space</kbd> | begin selection           |
+| <kbd>Ctrl</kbd> + <kbd>a</kbd>     | start of line             |
+| <kbd>Ctrl</kbd> + <kbd>b</kbd>     | cursor left               |
+| <kbd>Ctrl</kbd> + <kbd>c</kbd>     | cancel                    |
+| <kbd>Ctrl</kbd> + <kbd>e</kbd>     | end of line               |
+| <kbd>Ctrl</kbd> + <kbd>f</kbd>     | cursor right              |
+| <kbd>Ctrl</kbd> + <kbd>g </kbd>    | clear selection           |
+| <kbd>Ctrl</kbd> + <kbd>k</kbd>     | copy end of line          |
+| <kbd>Ctrl</kbd> + <kbd>n</kbd>     | cursor down               |
+| <kbd>Ctrl</kbd> + <kbd>p</kbd>     | cursor up                 |
+| <kbd>Ctrl</kbd> + <kbd>r</kbd>     | search backward           |
+| <kbd>Ctrl</kbd> + <kbd>s </kbd>    | search forward            |
+| <kbd>Ctrl</kbd> + <kbd>v </kbd>    | page down                 |
+| <kbd>Ctrl</kbd> + <kbd>w </kbd>    | copy selection and cancel |
+| <kbd>Escape </kbd>                 | cancel                    |
+| <kbd>Space</kbd>                   | page down                 |
+| <kbd>,</kbd>                       | jump reverse              |
+| <kbd>;</kbd>                       | jump again                |
+| <kbd>F</kbd>                       | jump backward             |
+| <kbd>N</kbd>                       | search reverse            |
+| <kbd>R</kbd>                       | rectangle toggle          |
+| <kbd>T</kbd>                       | jump to backward          |
+| <kbd>f</kbd>                       | jump forward              |
+| <kbd>g</kbd>                       | goto line                 |
+| <kbd>n</kbd>                       | search again              |
+| <kbd>q</kbd>                       | cancel                    |
+| <kbd>t</kbd>                       | jump to forward           |
+| <kbd>Home</kbd>                    | start of line             |
+| <kbd>End</kbd>                     | end of line               |
+| <kbd>NPage</kbd>                   | page down                 |
+| <kbd>PPage</kbd>                   | page up                   |
+| <kbd>Up</kbd>                      | cursor up                 |
+| <kbd>Down</kbd>                    | cursor down               |
+| <kbd>Left</kbd>                    | cursor left               |
+| <kbd>Right</kbd>                   | cursor right              |
+| <kbd>Meta</kbd> + <kbd>< </kbd>    | history top               |
+| <kbd>Meta</kbd> + <kbd>></kbd>     | history bottom            |
+| <kbd>Meta</kbd> + <kbd>R</kbd>     | top line                  |
+| <kbd>Meta</kbd> + <kbd>b</kbd>     | previous word             |
+| <kbd>Meta</kbd> + <kbd>f</kbd>     | next word end             |
+| <kbd>Meta</kbd> + <kbd>Meta</kbd>  | back to indentation       |
+| <kbd>Meta</kbd> + <kbd>r</kbd>     | middle line               |
+| <kbd>Meta</kbd> + <kbd>v</kbd>     | page up                   |
+| <kbd>Meta</kbd> + <kbd>w</kbd>     | copy selection and cancel |
+| <kbd>Meta</kbd> + <kbd>{</kbd>     | previous paragraph        |
+| <kbd>Meta</kbd> + <kbd>}</kbd>     | next paragraph            |
+| <kbd>Meta</kbd> + <kbd>Up</kbd>    | halfpage up               |
+| <kbd>Meta</kbd> + <kbd>Down</kbd>  | halfpage down             |
+| <kbd>Ctrl</kbd> + <kbd>Up</kbd>    | scroll up                 |
+| <kbd>Ctrl</kbd> + <kbd>Down</kbd>  | scroll down               |
 
 ## Copy-mode Vi
 
-|                                   |                                          |
-| --------------------------------- | ---------------------------------------- |
-| <kbd>Ctrl</kbd> + <kbd>b</kbd>    | page-up                                  |
-| <kbd>Ctrl</kbd> + <kbd>c</kbd>    | cancel                                   |
-| <kbd>Ctrl</kbd> + <kbd>d</kbd>    | halfpage-down                            |
-| <kbd>Ctrl</kbd> + <kbd>e</kbd>    | scroll-down                              |
-| <kbd>Ctrl</kbd> + <kbd>f</kbd>    | page-down                                |
-| <kbd>Ctrl</kbd> + <kbd>h</kbd>    | cursor-left                              |
-| <kbd>Ctrl</kbd> + <kbd>j</kbd>    | copy-selection-and-cancel                |
-| <kbd>Enter</kbd>                  | copy-selection-and-cancel                |
-| <kbd>Ctrl</kbd> + <kbd>u</kbd>    | halfpage-up                              |
-| <kbd>Ctrl</kbd> + <kbd>v</kbd>    | rectangle-toggle                         |
-| <kbd>Ctrl</kbd> + <kbd>y</kbd>    | scroll-up                                |
-| <kbd>Escape</kbd>                 | clear-selection                          |
-| <kbd>Space</kbd>                  | begin-selection                          |
-| <kbd>/</kbd>                      | search down search-forward \%%%\|        |
-| <kbd>0</kbd>                      | start-of-line                            |
-| <kbd>:</kbd>                      | goto line goto-line \%%%\|               |
-| <kbd>;</kbd>                      | jump-again                               |
-| <kbd>?</kbd>                      | search up search-backward \%%%\|         |
-| <kbd>A</kbd>                      | append-selection-and-cancel              |
-| <kbd>B</kbd>                      | previous-space                           |
-| <kbd>D</kbd>                      | copy-end-of-line                         |
-| <kbd>E</kbd>                      | next-space-end                           |
-| <kbd>F</kbd>                      | jump backward jump-backward \%%%\|       |
-| <kbd>G</kbd>                      | history-bottom                           |
-| <kbd>H</kbd>                      | top-line                                 |
-| <kbd>J</kbd>                      | scroll-down                              |
-| <kbd>K</kbd>                      | scroll-up                                |
-| <kbd>L</kbd>                      | bottom-line                              |
-| <kbd>Meta</kbd>                   | middle-line                              |
-| <kbd>N</kbd>                      | search-reverse                           |
-| <kbd>T</kbd>                      | jump to backward jump-to-backward \%%%\| |
-| <kbd>V</kbd>                      | select-line                              |
-| <kbd>W</kbd>                      | next-space                               |
-| <kbd>^</kbd>                      | back-to-indentation                      |
-| <kbd>b</kbd>                      | previous-word                            |
-| <kbd>e</kbd>                      | next-word-end                            |
-| <kbd>f</kbd>                      | jump forward jump-forward \%%%\|         |
-| <kbd>g</kbd>                      | history-top                              |
-| <kbd>h</kbd>                      | cursor-left                              |
-| <kbd>j</kbd>                      | cursor-down                              |
-| <kbd>k</kbd>                      | cursor-up                                |
-| <kbd>l</kbd>                      | cursor-right                             |
-| <kbd>n</kbd>                      | search-again                             |
-| <kbd>o</kbd>                      | other-end                                |
-| <kbd>q</kbd>                      | cancel                                   |
-| <kbd>t</kbd>                      | jump to forward jump-to-forward \%%%\|   |
-| <kbd>v</kbd>                      | rectangle-toggle                         |
-| <kbd>w</kbd>                      | next-word                                |
-| <kbd>{</kbd>                      | previous-paragraph                       |
-| <kbd>}</kbd>                      | next-paragraph                           |
-| <kbd>BSpace</kbd>                 | cursor-left                              |
-| <kbd>NPage</kbd>                  | page-down                                |
-| <kbd>PPage</kbd>                  | page-up                                  |
-| <kbd>Up</kbd>                     | cursor-up                                |
-| <kbd>Down</kbd>                   | cursor-down                              |
-| <kbd>Left</kbd>                   | cursor-left                              |
-| <kbd>Right</kbd>                  | cursor-right                             |
-| <kbd>Ctrl</kbd> + <kbd>Up</kbd>   | scroll-up                                |
-| <kbd>Ctrl</kbd> + <kbd>Down</kbd> | scroll-down                              |
+|                                   |                             |
+| --------------------------------- | --------------------------- |
+| <kbd>Ctrl</kbd> + <kbd>b</kbd>    | page up                     |
+| <kbd>Ctrl</kbd> + <kbd>c</kbd>    | cancel                      |
+| <kbd>Ctrl</kbd> + <kbd>d</kbd>    | halfpage down               |
+| <kbd>Ctrl</kbd> + <kbd>e</kbd>    | scroll down                 |
+| <kbd>Ctrl</kbd> + <kbd>f</kbd>    | page down                   |
+| <kbd>Ctrl</kbd> + <kbd>h</kbd>    | cursor left                 |
+| <kbd>Ctrl</kbd> + <kbd>j</kbd>    | copy selection and cancel   |
+| <kbd>Enter</kbd>                  | copy selection and cancel   |
+| <kbd>Ctrl</kbd> + <kbd>u</kbd>    | halfpage up                 |
+| <kbd>Ctrl</kbd> + <kbd>v</kbd>    | rectangle toggle            |
+| <kbd>Ctrl</kbd> + <kbd>y</kbd>    | scroll up                   |
+| <kbd>Escape</kbd>                 | clear selection             |
+| <kbd>Space</kbd>                  | begin selection             |
+| <kbd>/</kbd>                      | search down                 |
+| <kbd>0</kbd>                      | start of line               |
+| <kbd>:</kbd>                      | goto line                   |
+| <kbd>;</kbd>                      | jump again                  |
+| <kbd>?</kbd>                      | search up                   |
+| <kbd>A</kbd>                      | append selection and cancel |
+| <kbd>B</kbd>                      | previous space              |
+| <kbd>D</kbd>                      | copy end of line            |
+| <kbd>E</kbd>                      | next space end              |
+| <kbd>F</kbd>                      | jump backward               |
+| <kbd>G</kbd>                      | history bottom              |
+| <kbd>H</kbd>                      | top line                    |
+| <kbd>J</kbd>                      | scroll down                 |
+| <kbd>K</kbd>                      | scroll up                   |
+| <kbd>L</kbd>                      | bottom line                 |
+| <kbd>Meta</kbd>                   | middle line                 |
+| <kbd>N</kbd>                      | search reverse              |
+| <kbd>T</kbd>                      | jump to backward            |
+| <kbd>V</kbd>                      | select line                 |
+| <kbd>W</kbd>                      | next space                  |
+| <kbd>^</kbd>                      | back to indentation         |
+| <kbd>b</kbd>                      | previous-word               |
+| <kbd>e</kbd>                      | next word end               |
+| <kbd>f</kbd>                      | jump forward                |
+| <kbd>g</kbd>                      | history top                 |
+| <kbd>h</kbd>                      | cursor left                 |
+| <kbd>j</kbd>                      | cursor down                 |
+| <kbd>k</kbd>                      | cursor up                   |
+| <kbd>l</kbd>                      | cursor right                |
+| <kbd>n</kbd>                      | search again                |
+| <kbd>o</kbd>                      | other end                   |
+| <kbd>q</kbd>                      | cancel                      |
+| <kbd>t</kbd>                      | jump to forward             |
+| <kbd>v</kbd>                      | rectangle toggle            |
+| <kbd>w</kbd>                      | next word                   |
+| <kbd>{</kbd>                      | previous paragraph          |
+| <kbd>}</kbd>                      | next paragraph              |
+| <kbd>BSpace</kbd>                 | cursor left                 |
+| <kbd>NPage</kbd>                  | page down                   |
+| <kbd>PPage</kbd>                  | page up                     |
+| <kbd>Up</kbd>                     | cursor up                   |
+| <kbd>Down</kbd>                   | cursor down                 |
+| <kbd>Left</kbd>                   | cursor left                 |
+| <kbd>Right</kbd>                  | cursor right                |
+| <kbd>Ctrl</kbd> + <kbd>Up</kbd>   | scroll up                   |
+| <kbd>Ctrl</kbd> + <kbd>Down</kbd> | scroll down                 |
