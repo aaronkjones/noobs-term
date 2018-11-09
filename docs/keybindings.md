@@ -1,5 +1,13 @@
 # Key bindings
 
+The following key bindings are what you would press after first sending the prefix.
+
+For example, to enter copy mode:
+
+<kbd>Ctrl</kbd> + <kbd>a</kbd> <kbd>[</kbd>
+
+Key bindings can be displayed in Tmux with: <kbd>Ctrl</kbd> + <kbd>a</kbd> <kbd>?</kbd>
+
 ## Main
 
 |                                |                 |
@@ -60,7 +68,8 @@
 | <kbd>5</kbd>                   | select window 5         |
 | <kbd>6</kbd>                   | select window 6         |
 | <kbd>7</kbd>                   | select window 7         |
-| <kbd>8</kbd>                   | select window 8         |
+| <kbd>8</kbd>                   | select window 8      
+| ------------------------------ | --------------- |   |
 | <kbd>9</kbd>                   | select window 9         |
 
 ## Buffer
