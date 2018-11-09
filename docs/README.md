@@ -130,23 +130,23 @@ In Virtualbox, click the "Show" button. You can now run the install command belo
 
 Currently, the following platforms are confirmed to be supported
 
--   Ubuntu
--   Debian
--   macOS
--   Arch Linux
--   Windows
--   Raspbian
+- Ubuntu
+- Debian
+- macOS
+- Arch Linux
+- Windows
+- Raspbian
 
 ## Install
 
 The installer will perform several functions including:
 
--   Install dependencies git, curl, wget
--   Install programs zsh, tmux, neovim
--   Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations
--   Set default shell to zsh
--   Load neovim plugins
--   Install plugins and themes
+- Install dependencies git, curl, wget
+- Install programs zsh, tmux, neovim
+- Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations
+- Set default shell to zsh
+- Load neovim plugins
+- Install plugins and themes
 
 To install, run the following commands in your terminal:
 
@@ -193,21 +193,27 @@ or
 2.  Install Ubuntu 18.04  
     From the Windows Store, search for Ubuntu 18.04
 
-3.  Install Chocolatey  
-    In Powershell (as Admin):  
-    `Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
+3.  Install [Scoop](https://scoop.sh/)
+    In Powershell (as Admin):
+    `iex (new-object net.webclient).downloadstring('https://get.scoop.sh')`
 
-4.  Install Hyper  
-    In Powershell (as Admin):  
-    `choco install -y hyper`
+    > Note: if you get an error you might need to change the execution policy (i.e. enable Powershell) with Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
-5.  Install Font  
+4.  Add [Scoop Extras](https://github.com/lukesampson/scoop-extras)
+    In Powershell (as Admin):  
+    `scoop bucket add extras`
+
+5.  Install Hyper  
+    In Powershell:  
+    `scoop install hyper`
+
+6.  Install Font  
     Download Inconsolata (or your preferred font), open, and click "Install"
     `https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf`
 
     > To install all Powerline fonts, clone the repo `https://github.com/powerline/fonts.git` and run install.ps1
 
-6.  Set shell to wsl.exe  
+7.  Set shell to wsl.exe  
     In Hyper:  
     `chsh -s $(which zsh)`  
     In preferences (<kbd>Ctrl</kbd> + <kbd>,</kbd>), find and change shell and font settings to:
@@ -220,11 +226,11 @@ or
 
     > If you want, you can add the font to the beginning to retain fallback fonts (e.g. fontFamily: 'Inconsolata for Powerline','monospace',...)
 
-7.  Install Nord-Hyper  
+8.  Install Nord-Hyper  
     In Powershell (as Admin):  
     `hyper -i nord-hyper`
 
-8.  Run Noobs Term installer
+9.  Run Noobs Term installer
 
 ## Uninstall
 
@@ -251,10 +257,10 @@ See [Keybindings.md](Keybindings.md)
 
 ## Resources
 
--   [Awesome Tmux](https://github.com/rothgar/awesome-tmux)
--   [Awesome Vim](https://github.com/akrawchyk/awesome-vim)
--   [VimAwesome](https://vimawesome.com)
--   [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)
+- [Awesome Tmux](https://github.com/rothgar/awesome-tmux)
+- [Awesome Vim](https://github.com/akrawchyk/awesome-vim)
+- [VimAwesome](https://vimawesome.com)
+- [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)
 
 ## Contributing
 
