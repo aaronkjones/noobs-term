@@ -243,6 +243,10 @@ Single command uninstall:
 or  
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/aaronkjones/noobs-term/master/noobs-term-uninstall.sh)"`
 
+## Key bindings
+
+See [keybindings](keybindings.md)
+
 ## Resources
 
 -   [Awesome Tmux](https://github.com/rothgar/awesome-tmux)
