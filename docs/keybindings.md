@@ -97,7 +97,7 @@ Key bindings can be displayed in Tmux with: <kbd>Ctrl</kbd> + <kbd>a</kbd> <kbd>
 | ---------------------------------- | ----------------- |
 | <kbd>;</kbd>                       | last pane         |
 | <kbd>o</kbd>                       | next pane         |
-| <kbd>Meta</kbd>                    | select pane       |
+| <kbd>M</kbd>                    | select pane       |
 | <kbd>m </kbd>                      | mark pane         |
 | <kbd>q</kbd>                       | display panes     |
 | <kbd>x</kbd>                       | kill pane         |
