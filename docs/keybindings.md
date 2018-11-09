@@ -2,17 +2,20 @@
 
 The following key bindings are what you would press after first sending the prefix.
 
-For example, to enter copy mode:
-
-<kbd>Ctrl</kbd> + <kbd>a</kbd> <kbd>[</kbd>
+For example, to enter copy mode press: <kbd>Ctrl</kbd> + <kbd>a</kbd> <kbd>[</kbd>
 
 Key bindings can be displayed in Tmux with: <kbd>Ctrl</kbd> + <kbd>a</kbd> <kbd>?</kbd>
+
+## Prefix
+
+|                                |                 |
+| ------------------------------ | --------------- |
+| <kbd>Ctrl</kbd> + <kbd>a</kbd> | send prefix     |
 
 ## Main
 
 |                                |                 |
 | ------------------------------ | --------------- |
-| <kbd>Ctrl</kbd> + <kbd>a</kbd> | send prefix     |
 | <kbd>Ctrl</kbd> + <kbd>z</kbd> | suspend client  |
 | <kbd>!</kbd>                   | break pane      |
 | <kbd>$</kbd>                   | rename session  |
