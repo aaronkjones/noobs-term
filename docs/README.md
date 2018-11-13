@@ -4,38 +4,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/aaronkjones/noobs-term/blob/master/LICENSE)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=http://noobs-term.com&text=A%20terminal%20bundle%20for%20everyone&hashtags=tmux,zsh,command-line)
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [Noobs Term](#noobs-term)
-    - [Overview](#overview)
-    - [What's Included](#whats-included)
-    - [Showcase](#showcase)
-        - [Completions](#completions)
-        - [Auto-suggestions](#auto-suggestions)
-        - [Command validation](#command-validation)
-        - [Directory history](#directory-history)
-        - [Git feedback](#git-feedback)
-        - [Terminal multiplexing](#terminal-multiplexing)
-        - [Window tabbing](#window-tabbing)
-        - [Nord theming](#nord-theming)
-        - [Persistence](#persistence)
-    - [Demo](#demo)
-    - [Supported Platforms](#supported-platforms)
-    - [Install](#install)
-    - [Setup](#setup)
-        - [Ubuntu](#ubuntu)
-        - [OSX](#osx)
-        - [Arch](#arch)
-        - [Windows](#windows)
-    - [Uninstall](#uninstall)
-    - [Key bindings](#key-bindings)
-    - [Resources](#resources)
-    - [Contributing](#contributing)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ## Overview
 
 ![Cover preview](_media/cover_preview_lrg.png)  
