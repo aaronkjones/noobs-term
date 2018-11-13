@@ -212,7 +212,7 @@ or
 
 6.  Install Font
 
-    Download Inconsolata (or your preferred font), open, and click "Install"
+    Download Inconsolata (or your preferred font), open, and click "Install"  
     `https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf`
 
     > To install all Powerline fonts, clone the repo `https://github.com/powerline/fonts.git` and run install.ps1
@@ -235,7 +235,7 @@ or
     In Powershell (as Admin):  
     `hyper -i nord-hyper`
 
-9.  Run Noobs Term installer
+9.  [Install](#install) Noobs Term
 
 ## Uninstall
 
