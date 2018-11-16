@@ -4,36 +4,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/aaronkjones/noobs-term/blob/master/LICENSE)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=http://noobs-term.com&text=A%20terminal%20bundle%20for%20everyone&hashtags=tmux,zsh,command-line)
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
--   [Overview](#overview)
--   [What's Included](#whats-included)
--   [Showcase](#showcase)
-    -   [Completions](#completions)
-    -   [Auto-suggestions](#auto-suggestions)
-    -   [Command validation](#command-validation)
-    -   [Directory history](#directory-history)
-    -   [Git feedback](#git-feedback)
-    -   [Terminal multiplexing](#terminal-multiplexing)
-    -   [Window tabbing](#window-tabbing)
-    -   [Nord theming](#nord-theming)
-    -   [Persistence](#persistence)
--   [Demo](#demo)
--   [Supported Platforms](#supported-platforms)
--   [Install](#install)
--   [Setup](#setup)
-    -   [Ubuntu](#ubuntu)
-    -   [OSX](#osx)
-    -   [Arch](#arch)
-    -   [Windows](#windows)
--   [Uninstall](#uninstall)
--   [Resources](#resources)
--   [Contributing](#contributing)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ## Overview
 
 ![Cover preview](_media/cover_preview_lrg.png)  
@@ -44,7 +14,7 @@ Noobs Term is an installer that incorporates some of the wonderful terminal prog
 | Feature                                                             | Description                                                                                   |
 | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | [zsh](https://en.wikipedia.org/wiki/Z_shell)                        | a popular shell with features like completion, path correction, spelling correction, and more |
-| [tmux](https://github.com/tmux/tmux)                                | terminal muxiplier allows you to manage multiple terminal sessions from a single window       |
+| [tmux](https://github.com/tmux/tmux)                                | terminal multiplexer allows you to manage multiple terminal sessions from a single window       |
 | [neovim](https://neovim.io/)                                        | a project that seeks to aggressively refactor Vim                                             |
 | [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)              | a framework for managing your zsh configuration                                               |
 | [vim-sensible](https://github.com/tpope/vim-sensible)               | vim settings everyone can agree on                                                            |
@@ -128,23 +98,23 @@ In Virtualbox, click the "Show" button. You can now run the install command belo
 
 Currently, the following platforms are confirmed to be supported
 
--   Ubuntu
--   Debian
--   macOS
--   Arch Linux
--   Windows
--   Raspbian
+- Ubuntu
+- Debian
+- macOS
+- Arch Linux
+- Windows
+- Raspbian
 
 ## Install
 
 The installer will perform several functions including:
 
--   Install dependencies git, curl, wget
--   Install programs zsh, tmux, neovim
--   Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations
--   Set default shell to zsh
--   Load neovim plugins
--   Install plugins and themes
+- Install dependencies git, curl, wget
+- Install programs zsh, tmux, neovim
+- Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations
+- Set default shell to zsh
+- Load neovim plugins
+- Install plugins and themes
 
 To install, run the following commands in your terminal:
 
@@ -185,28 +155,39 @@ or
 
 ### Windows
 
-1.  Enable WSL  
-    In Powershell (as Admin):  
+1.  Enable WSL
+
+    **In Powershell (as Admin)**:  
     `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
-2.  Install Ubuntu 18.04  
+
+2.  Install Ubuntu 18.04
+
     From the Windows Store, search for Ubuntu 18.04
 
-3.  Install Chocolatey  
-    In Powershell (as Admin):  
-    `Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
+3.  Install [Scoop](https://scoop.sh/)
 
-4.  Install Hyper  
-    In Powershell (as Admin):  
-    `choco install -y hyper`
+    `iex (new-object net.webclient).downloadstring('https://get.scoop.sh')`
 
-5.  Install Font  
-    Download Inconsolata (or your preferred font), open, and click "Install"
+    > Note: if you get an error you might need to change the execution policy (i.e. enable Powershell) with Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+
+4.  Add [Scoop Extras](https://github.com/lukesampson/scoop-extras)
+
+    `scoop bucket add extras`
+
+5.  Install Hyper
+
+    `scoop install hyper`
+
+6.  Install Font
+
+    Download Inconsolata (or your preferred font), open, and click "Install"  
     `https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf`
 
     > To install all Powerline fonts, clone the repo `https://github.com/powerline/fonts.git` and run install.ps1
 
-6.  Set shell to wsl.exe  
-    In Hyper:  
+7.  Set shell to wsl.exe
+
+    **In Hyper**:  
     `chsh -s $(which zsh)`  
     In preferences (<kbd>Ctrl</kbd> + <kbd>,</kbd>), find and change shell and font settings to:
 
@@ -218,11 +199,11 @@ or
 
     > If you want, you can add the font to the beginning to retain fallback fonts (e.g. fontFamily: 'Inconsolata for Powerline','monospace',...)
 
-7.  Install Nord-Hyper  
+8.  Install Nord-Hyper  
     In Powershell (as Admin):  
     `hyper -i nord-hyper`
 
-8.  Run Noobs Term installer
+9.  [Install](#install) Noobs Term
 
 ## Uninstall
 
@@ -245,14 +226,14 @@ or
 
 ## Key bindings
 
-See [keybindings](keybindings.md)
+See [Keybindings.md](Keybindings.md)
 
 ## Resources
 
--   [Awesome Tmux](https://github.com/rothgar/awesome-tmux)
--   [Awesome Vim](https://github.com/akrawchyk/awesome-vim)
--   [VimAwesome](https://vimawesome.com)
--   [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)
+- [Awesome Tmux](https://github.com/rothgar/awesome-tmux)
+- [Awesome Vim](https://github.com/akrawchyk/awesome-vim)
+- [VimAwesome](https://vimawesome.com)
+- [Awesome Zsh](https://github.com/unixorn/awesome-zsh-plugins)
 
 ## Contributing
 
