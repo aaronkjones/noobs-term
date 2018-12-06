@@ -1,10 +1,6 @@
 language: bash
 jobs:
     include:
-      - stage: setup
-        script:
-            - npm install @semantic-release/changelog @semantic-release/git @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/exec @semantic-release/git semantic-release/release-notes-generator
-            - npx semantic-release
       - stage: test
         script:
             - git clone https://github.com/aaronkjones/noobs-term.git
