@@ -104,6 +104,9 @@ if [ "$(uname)" = 'Linux' ]; then
 		distro_ver="$(lsb_release -r -s)"
 	elif [ -f "/etc/arch-release" ]; then
 		distro='Arch'
+	elif [ -f "/etc/centos-release" ]; then
+		distro='CentOS'
+		distro_ver="$(cat /etc/centos-release | tr -dc '0-9.' | cut -d \. -f1).$(cat /etc/centos-release | tr -dc '0-9.' | cut -d \. -f2)"
 	fi
 elif [ "$(uname)" = 'Darwin' ]; then
 	platform='Mac'
@@ -125,7 +128,12 @@ if [ "$distro" = 'Ubuntu' ]; then
 			echo "Done"
 		fi
 	fi
+elif [ "$distro" = 'CentOS' ]; then
+	/usr/bin/sudo yum -y -q install epel-release
+	/usr/bin/sudo curl -o /etc/yum.repos.d/dperson-neovim-epel-7.repo https://copr.fedorainfracloud.org/coprs/dperson/neovim/repo/epel-7/dperson-neovim-epel-7.repo
+	/usr/bin/sudo yum -y -q install neovim --enablerepo=epel
 fi
+
 echo
 # install dependencies
 # linux
@@ -140,6 +148,31 @@ if [ "$platform" = 'Linux' ]; then
 		for p in $dependencies; do
 			/usr/bin/sudo pacman -q -S --noconfirm "$p" 1>/dev/null
 		done
+	elif [ "$distro" = 'CentOS' ]; then
+		for p in $dependencies; do
+			/usr/bin/sudo yum -y -q install "$p"
+		done
+			/usr/bin/sudo yum -y -q install gcc kernel-devel make ncurses-devel
+			curl -s -OL https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz > /dev/null && \
+			tar -xzf libevent-2.1.8-stable.tar.gz && \
+			cd libevent-2.1.8-stable && \
+			./configure --prefix=/usr/local > /dev/null && \
+			make > /dev/null 2>&1 && \
+			sudo make install > /dev/null && \
+			(cd .. || exit) && \
+			curl -s -OL https://github.com/tmux/tmux/releases/download/2.7/tmux-2.7.tar.gz > /dev/null && \
+			tar -xzf tmux-2.7.tar.gz && \
+			cd tmux-2.7 && \
+			LDFLAGS="-L/usr/local/lib -Wl,-rpath=/usr/local/lib" ./configure --prefix=/usr/local > /dev/null && \
+			make > /dev/null 2>&1 && \
+			sudo make install > /dev/null 2>&1 && \
+			(cd .. || exit) && \
+			wget --quiet https://sourceforge.net/projects/zsh/files/zsh/5.6.2/zsh-5.6.2.tar.xz > /dev/null && \
+			tar xf zsh-5.6.2.tar.xz && \
+			cd zsh-5.6.2 && \
+			./configure > /dev/null && \
+			make > /dev/null 2>&1 && \
+			sudo make install > /dev/null 2>&1
 	fi
 	# mac
 elif [ $platform = 'Mac' ]; then
@@ -211,14 +244,15 @@ if [ "$platform" = 'Linux' ]; then
 		echo "Installing Nord theme for Gnome Terminal..."
 		curl -sO https://raw.githubusercontent.com/arcticicestudio/nord-gnome-terminal/develop/src/nord.sh && chmod +x nord.sh && ./nord.sh
 		rm -f nord.sh
+		echo "Done"
 	fi
 elif [ "$platform" = 'Mac' ]; then
 	echo "Downloading Nord theme for iTerm"
 	temp_dir=$(mktemp -d 2>/dev/null || mktemp -d -t 'mytmpdir')
 	wget -q -O "$temp_dir/Nord.itermcolors" https://raw.githubusercontent.com/arcticicestudio/nord-iterm2/master/src/xml/Nord.itermcolors
+	echo "Done"
 fi
 printf "${PURP}"
-echo "Done"
 echo
 echo "Installing Powerline fonts..."
 printf "${NORMAL}"
