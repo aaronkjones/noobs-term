@@ -190,10 +190,10 @@ echo
 echo "Remove Zsh plugins? [y]es [n]o"
 read -r answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-	rm -rf "$HOME/.zsh/zsh-autosuggestions/"
+	rm -rf "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
 	rm -rf "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
 	rm -rf "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-history-substring-search"
-	rm -rf "$HOME/.oh-my-zsh/custom/plugins/zsh-completions"
+	rm -rf "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-completions"
 elif [ "$answer" != "${answer#[Nn]}" ]; then
 	echo "Keeping Zsh plugins"
 else
