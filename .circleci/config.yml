@@ -3,6 +3,8 @@ jobs:
   test:
     docker:
       - image: ubuntu:14.04
+    environment:
+      TERM: dumb
     steps:
       - checkout
       - run: |
