@@ -6,12 +6,13 @@ jobs:
     steps:
       - checkout
       - run: |
+          apt-get -qq update; apt-get -y install git
           git clone --single-branch --branch develop https://github.com/aaronkjones/noobs-term.git
           cd noobs-term
           chmod +x noobs-term.sh
           sh noobs-term.sh
 workflows:
   version: 2
-  build_and_test:
+  test:
     jobs:
       - test
