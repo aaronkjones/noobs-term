@@ -2,7 +2,7 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d83cf5c6315940b684318b0d7c756572)](https://www.codacy.com/app/aaronkjones/noobs-term?utm_source=github.com&utm_medium=referral&utm_content=aaronkjones/noobs-term&utm_campaign=Badge_Grade)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/aaronkjones/noobs-term/blob/master/LICENSE)
-[![CircleCI](https://circleci.com/gh/aaronkjones/noobs-term/tree/develop.svg?style=svg)](https://circleci.com/gh/aaronkjones/noobs-term/tree/develop)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/aaronkjones/noobs-term/master.svg)](https://circleci.com/gh/aaronkjones/noobs-term/)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=http://noobs-term.com&text=A%20terminal%20bundle%20for%20everyone&hashtags=tmux,zsh,command-line)
 
 ## Overview
