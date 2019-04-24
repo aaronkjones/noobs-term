@@ -8,9 +8,10 @@ jobs:
     steps:
       - checkout
       - run: |
+          apt-get -qq update
           apt-get install -y software-properties-common
           apt-get install -y sudo
-          apt-get -qq update; apt-get -y install git
+          apt-get -y install git
           git clone --single-branch --branch develop https://github.com/aaronkjones/noobs-term.git
           cd noobs-term
           chmod +x noobs-term.sh
