@@ -108,8 +108,9 @@ Currently, the following platforms are confirmed to be supported
 
 ## Install
 
-The installer will perform several functions including:
+The installer will:
 
+- Backup existing dotfiles
 - Install dependencies git, curl, wget
 - Install programs zsh, tmux, neovim
 - Install dotfiles to `~/.dotfiles` and symbolically link them to their default locations
