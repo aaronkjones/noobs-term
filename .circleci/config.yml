@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: ubuntu:16.04
+    steps:
+      - checkout
+
+      - run: |
+          git clone --single-branch --branch develop https://github.com/aaronkjones/noobs-term.git
+          cd noobs-term
+          chmod +x noobs-term.sh
+          sh noobs-term.sh

@@ -1,9 +1,0 @@
-language: bash
-jobs:
-    include:
-      - stage: test
-        script:
-            - git clone https://github.com/aaronkjones/noobs-term.git
-            - cd noobs-term
-            - chmod +x noobs-term.sh
-            - sh noobs-term.sh
