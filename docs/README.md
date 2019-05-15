@@ -203,7 +203,7 @@ or
 
 8.  Install Nord-Hyper  
     In Powershell (as Admin):  
-    `hyper -i nord-hyper`
+    `hyper i nord-hyper`
 
 9.  [Install](#install) Noobs Term
 
