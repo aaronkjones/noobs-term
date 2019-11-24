@@ -264,7 +264,7 @@ quiet_git clone https://github.com/powerline/fonts.git --depth=1 &&
 printf "${PURP}"
 echo "Done"
 echo
-if [ "$platform" = 'Mac' ]; then
+if [ "$platform" = 'Mac' ] && [ "${TERM_PROGRAM}" = "iTerm.app" ]; then
 	echo 'Installing Nord theme for iTerm...'
 	open "$temp_dir/Nord.itermcolors"
 fi
