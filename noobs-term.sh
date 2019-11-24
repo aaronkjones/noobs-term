@@ -153,23 +153,23 @@ if [ "$platform" = 'Linux' ]; then
 			/usr/bin/sudo yum -y -q install "$p"
 		done
 			/usr/bin/sudo yum -y -q install gcc kernel-devel make ncurses-devel
-			curl -s -OL https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz > /dev/null && \
-			tar -xzf libevent-2.1.8-stable.tar.gz && \
-			cd libevent-2.1.8-stable && \
+			curl -s -OL https://github.com/libevent/libevent/releases/download/release-2.1.11-stable/libevent-2.1.11-stable.tar.gz > /dev/null && \
+			tar -xzf libevent-2.1.11-stable.tar.gz && \
+			cd libevent-2.1.11-stable && \
 			./configure --prefix=/usr/local > /dev/null && \
 			make > /dev/null 2>&1 && \
 			sudo make install > /dev/null && \
 			(cd .. || exit) && \
-			curl -s -OL https://github.com/tmux/tmux/releases/download/2.7/tmux-2.7.tar.gz > /dev/null && \
-			tar -xzf tmux-2.7.tar.gz && \
-			cd tmux-2.7 && \
+			curl -s -OL https://github.com/tmux/tmux/releases/download/2.9a/tmux-2.9a.tar.gz > /dev/null && \
+			tar -xzf tmux-2.9a.tar.gz && \
+			cd tmux-2.9a && \
 			LDFLAGS="-L/usr/local/lib -Wl,-rpath=/usr/local/lib" ./configure --prefix=/usr/local > /dev/null && \
 			make > /dev/null 2>&1 && \
 			sudo make install > /dev/null 2>&1 && \
 			(cd .. || exit) && \
-			wget --quiet https://sourceforge.net/projects/zsh/files/zsh/5.6.2/zsh-5.6.2.tar.xz > /dev/null && \
-			tar xf zsh-5.6.2.tar.xz && \
-			cd zsh-5.6.2 && \
+			wget --quiet https://sourceforge.net/projects/zsh/files/zsh/5.7.1/zsh-5.7.1.tar.xz > /dev/null && \
+			tar xf zsh-5.7.1.tar.xz && \
+			cd zsh-5.7.1 && \
 			./configure > /dev/null && \
 			make > /dev/null 2>&1 && \
 			sudo make install > /dev/null 2>&1
@@ -264,7 +264,7 @@ quiet_git clone https://github.com/powerline/fonts.git --depth=1 &&
 printf "${PURP}"
 echo "Done"
 echo
-if [ "$platform" = 'Mac' ]; then
+if [ "$platform" = 'Mac' ] && [ "${TERM_PROGRAM}" = "iTerm.app" ]; then
 	echo 'Installing Nord theme for iTerm...'
 	open "$temp_dir/Nord.itermcolors"
 fi
