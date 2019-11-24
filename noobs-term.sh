@@ -153,9 +153,9 @@ if [ "$platform" = 'Linux' ]; then
 			/usr/bin/sudo yum -y -q install "$p"
 		done
 			/usr/bin/sudo yum -y -q install gcc kernel-devel make ncurses-devel
-			curl -s -OL https://github.com/libevent/libevent/releases/download/release-2.1.10-stable/libevent-2.1.10-stable.tar.gz > /dev/null && \
-			tar -xzf libevent-2.1.10-stable.tar.gz && \
-			cd libevent-2.1.10-stable && \
+			curl -s -OL https://github.com/libevent/libevent/releases/download/release-2.1.11-stable/libevent-2.1.11-stable.tar.gz > /dev/null && \
+			tar -xzf libevent-2.1.11-stable.tar.gz && \
+			cd libevent-2.1.11-stable && \
 			./configure --prefix=/usr/local > /dev/null && \
 			make > /dev/null 2>&1 && \
 			sudo make install > /dev/null && \
@@ -169,7 +169,7 @@ if [ "$platform" = 'Linux' ]; then
 			(cd .. || exit) && \
 			wget --quiet https://sourceforge.net/projects/zsh/files/zsh/5.7.1/zsh-5.7.1.tar.xz > /dev/null && \
 			tar xf zsh-5.7.1.tar.xz && \
-			cd  zsh-5.7.1 && \
+			cd zsh-5.7.1 && \
 			./configure > /dev/null && \
 			make > /dev/null 2>&1 && \
 			sudo make install > /dev/null 2>&1
