@@ -18,3 +18,5 @@ Noobs Term is an installer that incorporates some of the wonderful terminal prog
 ## License
 
 -   This project is licensed under the MIT license type. See [LICENSE](LICENSE) for details
+
+## Thank You
